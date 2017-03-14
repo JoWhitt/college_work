@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "U:/Comp_Arch/mux2_4bit.xst" -ofn "U:/Comp_Arch/mux2_4bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700a-fg484-4 mux2_4bit.ngc mux2_4bit.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o mux2_4bit_map.ncd mux2_4bit.ngd mux2_4bit.pcf 
+xst -intstyle ise -ifn "U:/Comp_Arch/mux2_4bit.xst" -ofn "U:/Comp_Arch/mux2_4bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700a-fg484-4 mux2_4bit.ngc mux2_4bit.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o mux2_4bit_map.ncd mux2_4bit.ngd mux2_4bit.pcf 
+xst -intstyle ise -ifn "U:/Comp_Arch/mux2_4bit.xst" -ofn "U:/Comp_Arch/mux2_4bit.syr" 
+xst -intstyle ise -ifn "U:/Comp_Arch/mux2_4bit.xst" -ofn "U:/Comp_Arch/mux2_4bit.syr" 
+xst -intstyle ise -ifn "U:/Comp_Arch/mux2_4bit.xst" -ofn "U:/Comp_Arch/mux2_4bit.syr" 
+xst -intstyle ise -ifn "U:/Comp_Arch/mux2_4bit.xst" -ofn "U:/Comp_Arch/mux2_4bit.syr" 
+xst -intstyle ise -ifn "U:/Comp_Arch/mux2_4bit.xst" -ofn "U:/Comp_Arch/mux2_4bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700a-fg484-4 mux2_4bit.ngc mux2_4bit.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o mux2_4bit_map.ncd mux2_4bit.ngd mux2_4bit.pcf 
+xst -intstyle ise -ifn "U:/Comp_Arch/mux2_4bit.xst" -ofn "U:/Comp_Arch/mux2_4bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700a-fg484-4 mux2_4bit.ngc mux2_4bit.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o mux2_4bit_map.ncd mux2_4bit.ngd mux2_4bit.pcf 

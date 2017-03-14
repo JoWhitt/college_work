@@ -1,0 +1,9 @@
+AR reg behavioral //tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/Register.vhd sub00/vhpl07 1487875684
+EN register_file NULL //tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd sub00/vhpl08 1487875685
+AR mux8_16bit behavioral //tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/mux4_4bit.vhd sub00/vhpl05 1487875682
+EN mux8_16bit NULL //tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/mux4_4bit.vhd sub00/vhpl04 1487875681
+AR mux2_4bit behavioral //tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/mux2_4bit.vhd sub00/vhpl01 1487875680
+EN mux2_4bit NULL //tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/mux2_4bit.vhd sub00/vhpl00 1487875679
+AR decoder_3to8 behavioral //tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/decoder_2to4.vhd sub00/vhpl03 1487875678
+EN decoder_3to8 NULL //tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/decoder_2to4.vhd sub00/vhpl02 1487875677
+EN reg NULL //tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/Register.vhd sub00/vhpl06 1487875683

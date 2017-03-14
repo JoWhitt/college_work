@@ -1,0 +1,149 @@
+Release 13.2 - xst O.61xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: register_file.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "register_file.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "register_file"
+Output Format                      : NGC
+Target Device                      : xc3s700a-4-fg484
+
+---- Source Options
+Top Module Name                    : register_file
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/decoder_2to4.vhd" in Library work.
+Architecture behavioral of Entity decoder_3to8 is up to date.
+Compiling vhdl file "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/mux2_4bit.vhd" in Library work.
+Architecture behavioral of Entity mux2_4bit is up to date.
+Compiling vhdl file "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/mux4_4bit.vhd" in Library work.
+Architecture behavioral of Entity mux8_16bit is up to date.
+Compiling vhdl file "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/Register.vhd" in Library work.
+Architecture behavioral of Entity reg is up to date.
+Compiling vhdl file "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd" in Library work.
+ERROR:HDLParsers:3312 - "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd" Line 85. Undefined symbol 'load_reg0'.
+ERROR:HDLParsers:1209 - "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd" Line 85. load_reg0: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd" Line 86. Undefined symbol 'load_reg1'.
+ERROR:HDLParsers:1209 - "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd" Line 86. load_reg1: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd" Line 87. Undefined symbol 'load_reg2'.
+ERROR:HDLParsers:1209 - "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd" Line 87. load_reg2: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd" Line 88. Undefined symbol 'load_reg3'.
+ERROR:HDLParsers:1209 - "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd" Line 88. load_reg3: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd" Line 89. Undefined symbol 'load_reg4'.
+ERROR:HDLParsers:1209 - "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd" Line 89. load_reg4: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd" Line 90. Undefined symbol 'load_reg5'.
+ERROR:HDLParsers:1209 - "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd" Line 90. load_reg5: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd" Line 91. Undefined symbol 'load_reg6'.
+ERROR:HDLParsers:1209 - "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd" Line 91. load_reg6: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd" Line 93. Undefined symbol 'load_reg7'.
+ERROR:HDLParsers:1209 - "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd" Line 93. load_reg7: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1411 - "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd" Line 107. Parameter reg0 of mode out can not be associated with a formal port of mode in.
+ERROR:HDLParsers:1411 - "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd" Line 108. Parameter reg1 of mode out can not be associated with a formal port of mode in.
+ERROR:HDLParsers:1411 - "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd" Line 109. Parameter reg2 of mode out can not be associated with a formal port of mode in.
+ERROR:HDLParsers:1411 - "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd" Line 110. Parameter reg3 of mode out can not be associated with a formal port of mode in.
+ERROR:HDLParsers:1411 - "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd" Line 111. Parameter reg4 of mode out can not be associated with a formal port of mode in.
+ERROR:HDLParsers:1411 - "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd" Line 112. Parameter reg5 of mode out can not be associated with a formal port of mode in.
+ERROR:HDLParsers:1411 - "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd" Line 113. Parameter reg6 of mode out can not be associated with a formal port of mode in.
+ERROR:HDLParsers:1411 - "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd" Line 114. Parameter reg7 of mode out can not be associated with a formal port of mode in.
+ERROR:HDLParsers:3312 - "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd" Line 119. Undefined symbol 'reg'.
+ERROR:HDLParsers:1209 - "//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd" Line 126. reg: Undefined symbol (last report in this block)
+--> 
+
+Total memory usage is 229516 kilobytes
+
+Number of errors   :   26 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

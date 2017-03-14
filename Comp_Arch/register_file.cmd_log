@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "U:/Comp_Arch/register_file.xst" -ofn "U:/Comp_Arch/register_file.syr" 
+xst -intstyle ise -ifn "U:/Comp_Arch/register_file.xst" -ofn "U:/Comp_Arch/register_file.syr" 

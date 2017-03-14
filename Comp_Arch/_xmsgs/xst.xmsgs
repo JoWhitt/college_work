@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLParsers" num="3312" delta="old" >&quot;<arg fmt="%s" index="1">//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd</arg>&quot; Line <arg fmt="%d" index="2">85</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">load_reg0</arg>&apos;.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1209" delta="old" >&quot;<arg fmt="%s" index="1">//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd</arg>&quot; Line <arg fmt="%d" index="2">85</arg>. <arg fmt="%s" index="3">load_reg0</arg>: Undefined symbol (last report in this block)
+</msg>
+
+<msg type="error" file="HDLParsers" num="3312" delta="old" >&quot;<arg fmt="%s" index="1">//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd</arg>&quot; Line <arg fmt="%d" index="2">86</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">load_reg1</arg>&apos;.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1209" delta="old" >&quot;<arg fmt="%s" index="1">//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd</arg>&quot; Line <arg fmt="%d" index="2">86</arg>. <arg fmt="%s" index="3">load_reg1</arg>: Undefined symbol (last report in this block)
+</msg>
+
+<msg type="error" file="HDLParsers" num="3312" delta="old" >&quot;<arg fmt="%s" index="1">//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd</arg>&quot; Line <arg fmt="%d" index="2">87</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">load_reg2</arg>&apos;.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1209" delta="old" >&quot;<arg fmt="%s" index="1">//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd</arg>&quot; Line <arg fmt="%d" index="2">87</arg>. <arg fmt="%s" index="3">load_reg2</arg>: Undefined symbol (last report in this block)
+</msg>
+
+<msg type="error" file="HDLParsers" num="3312" delta="old" >&quot;<arg fmt="%s" index="1">//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd</arg>&quot; Line <arg fmt="%d" index="2">88</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">load_reg3</arg>&apos;.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1209" delta="old" >&quot;<arg fmt="%s" index="1">//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd</arg>&quot; Line <arg fmt="%d" index="2">88</arg>. <arg fmt="%s" index="3">load_reg3</arg>: Undefined symbol (last report in this block)
+</msg>
+
+<msg type="error" file="HDLParsers" num="3312" delta="old" >&quot;<arg fmt="%s" index="1">//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd</arg>&quot; Line <arg fmt="%d" index="2">89</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">load_reg4</arg>&apos;.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1209" delta="old" >&quot;<arg fmt="%s" index="1">//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd</arg>&quot; Line <arg fmt="%d" index="2">89</arg>. <arg fmt="%s" index="3">load_reg4</arg>: Undefined symbol (last report in this block)
+</msg>
+
+<msg type="error" file="HDLParsers" num="3312" delta="old" >&quot;<arg fmt="%s" index="1">//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd</arg>&quot; Line <arg fmt="%d" index="2">90</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">load_reg5</arg>&apos;.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1209" delta="old" >&quot;<arg fmt="%s" index="1">//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd</arg>&quot; Line <arg fmt="%d" index="2">90</arg>. <arg fmt="%s" index="3">load_reg5</arg>: Undefined symbol (last report in this block)
+</msg>
+
+<msg type="error" file="HDLParsers" num="3312" delta="old" >&quot;<arg fmt="%s" index="1">//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd</arg>&quot; Line <arg fmt="%d" index="2">91</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">load_reg6</arg>&apos;.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1209" delta="old" >&quot;<arg fmt="%s" index="1">//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd</arg>&quot; Line <arg fmt="%d" index="2">91</arg>. <arg fmt="%s" index="3">load_reg6</arg>: Undefined symbol (last report in this block)
+</msg>
+
+<msg type="error" file="HDLParsers" num="3312" delta="old" >&quot;<arg fmt="%s" index="1">//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd</arg>&quot; Line <arg fmt="%d" index="2">93</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">load_reg7</arg>&apos;.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1209" delta="old" >&quot;<arg fmt="%s" index="1">//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd</arg>&quot; Line <arg fmt="%d" index="2">93</arg>. <arg fmt="%s" index="3">load_reg7</arg>: Undefined symbol (last report in this block)
+</msg>
+
+<msg type="error" file="HDLParsers" num="1411" delta="old" >&quot;<arg fmt="%s" index="1">//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd</arg>&quot; Line <arg fmt="%d" index="2">107</arg>. Parameter <arg fmt="%s" index="3">reg0</arg> of mode <arg fmt="%s" index="4">out</arg> can not be associated with a formal <arg fmt="%s" index="5">port</arg> of mode <arg fmt="%s" index="6">in</arg>.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1411" delta="old" >&quot;<arg fmt="%s" index="1">//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd</arg>&quot; Line <arg fmt="%d" index="2">108</arg>. Parameter <arg fmt="%s" index="3">reg1</arg> of mode <arg fmt="%s" index="4">out</arg> can not be associated with a formal <arg fmt="%s" index="5">port</arg> of mode <arg fmt="%s" index="6">in</arg>.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1411" delta="old" >&quot;<arg fmt="%s" index="1">//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd</arg>&quot; Line <arg fmt="%d" index="2">109</arg>. Parameter <arg fmt="%s" index="3">reg2</arg> of mode <arg fmt="%s" index="4">out</arg> can not be associated with a formal <arg fmt="%s" index="5">port</arg> of mode <arg fmt="%s" index="6">in</arg>.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1411" delta="old" >&quot;<arg fmt="%s" index="1">//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd</arg>&quot; Line <arg fmt="%d" index="2">110</arg>. Parameter <arg fmt="%s" index="3">reg3</arg> of mode <arg fmt="%s" index="4">out</arg> can not be associated with a formal <arg fmt="%s" index="5">port</arg> of mode <arg fmt="%s" index="6">in</arg>.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1411" delta="old" >&quot;<arg fmt="%s" index="1">//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd</arg>&quot; Line <arg fmt="%d" index="2">111</arg>. Parameter <arg fmt="%s" index="3">reg4</arg> of mode <arg fmt="%s" index="4">out</arg> can not be associated with a formal <arg fmt="%s" index="5">port</arg> of mode <arg fmt="%s" index="6">in</arg>.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1411" delta="old" >&quot;<arg fmt="%s" index="1">//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd</arg>&quot; Line <arg fmt="%d" index="2">112</arg>. Parameter <arg fmt="%s" index="3">reg5</arg> of mode <arg fmt="%s" index="4">out</arg> can not be associated with a formal <arg fmt="%s" index="5">port</arg> of mode <arg fmt="%s" index="6">in</arg>.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1411" delta="old" >&quot;<arg fmt="%s" index="1">//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd</arg>&quot; Line <arg fmt="%d" index="2">113</arg>. Parameter <arg fmt="%s" index="3">reg6</arg> of mode <arg fmt="%s" index="4">out</arg> can not be associated with a formal <arg fmt="%s" index="5">port</arg> of mode <arg fmt="%s" index="6">in</arg>.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1411" delta="old" >&quot;<arg fmt="%s" index="1">//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd</arg>&quot; Line <arg fmt="%d" index="2">114</arg>. Parameter <arg fmt="%s" index="3">reg7</arg> of mode <arg fmt="%s" index="4">out</arg> can not be associated with a formal <arg fmt="%s" index="5">port</arg> of mode <arg fmt="%s" index="6">in</arg>.
+</msg>
+
+<msg type="error" file="HDLParsers" num="3312" delta="old" >&quot;<arg fmt="%s" index="1">//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd</arg>&quot; Line <arg fmt="%d" index="2">119</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">reg</arg>&apos;.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1209" delta="old" >&quot;<arg fmt="%s" index="1">//tholos.itserv.scss.tcd.ie/ugrad/whittamj/Comp_Arch/register_file.vhd</arg>&quot; Line <arg fmt="%d" index="2">126</arg>. <arg fmt="%s" index="3">reg</arg>: Undefined symbol (last report in this block)
+</msg>
+
+</messages>
+

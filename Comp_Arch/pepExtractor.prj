@@ -1,0 +1,4 @@
+work	"Register.vhd"
+work	"decoder_2to4.vhd"
+work	"mux4_4bit.vhd"
+work	"register_file_v2.vhd"

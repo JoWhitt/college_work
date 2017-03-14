@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "U:/Comp_Arch/register_file_tb_isim_beh.exe" -prj "U:/Comp_Arch/register_file_tb_beh.prj" "work.register_file_tb" 
