@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-03-14T11:09:46</DateModified>
+  <DateModified>2017-03-14T13:58:05</DateModified>
   <ModuleName>register_file</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>U:/Comp_Arch/iseconfig/register_file.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>U:/Comp_Arch\</ImplementationReportsDirectory>
+  <SavedFilePath>U:/GitHub/college_work/Comp_Arch/iseconfig/register_file.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>U:/GitHub/college_work/Comp_Arch\</ImplementationReportsDirectory>
   <DateInitialized>2017-02-24T09:33:55</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

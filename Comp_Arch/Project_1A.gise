@@ -84,7 +84,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1489253103" xil_pn:in_ck="-6703842748589700701" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1489253103">
+    <transform xil_pn:end_ts="1489506928" xil_pn:in_ck="-2988392909994389277" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1489506928">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -95,6 +95,8 @@
       <outfile xil_pn:name="Register.vhd"/>
       <outfile xil_pn:name="decoder_2to4.vhd"/>
       <outfile xil_pn:name="decoder_3to8_tb.vhd"/>
+      <outfile xil_pn:name="full_adder.vhd"/>
+      <outfile xil_pn:name="mux16_16bit.vhd"/>
       <outfile xil_pn:name="mux2_4bit.vhd"/>
       <outfile xil_pn:name="mux2_4bit_tb.vhd"/>
       <outfile xil_pn:name="mux4_4bit.vhd"/>
@@ -103,6 +105,10 @@
       <outfile xil_pn:name="register_file.vhd"/>
       <outfile xil_pn:name="register_file_tb.vhd"/>
       <outfile xil_pn:name="register_file_v2.vhd"/>
+      <outfile xil_pn:name="register_file_v2_tb.vhd"/>
+      <outfile xil_pn:name="ripple_adder_16bit.vhd"/>
+      <outfile xil_pn:name="shifter_16bit.vhd"/>
+      <outfile xil_pn:name="zero_detect_16.vhd"/>
     </transform>
     <transform xil_pn:end_ts="1487936623" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="6875256462668204655" xil_pn:start_ts="1487936623">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -122,6 +128,7 @@
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
