@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;CheckTriangle.is_right_angled_triangle(...)&apos; to &apos;is_right_angled_tri&apos;&#x0D;&#x0A;- Original project: &apos;A&amp;DS_Triangles&apos;&#x0D;&#x0A;- Original element: &apos;CheckTriangle.is_right_angled_triangle(...)&apos;&#x0D;&#x0A;- Renamed element: &apos;CheckTriangle.is_right_angled_tri(...)&apos;&#x0D;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;is_right_angled_triangle&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;{CheckTriangle.java[CheckTriangle~is_right_angled_triangle~\[D" name="is_right_angled_tri" references="true" stamp="1485353915512" version="1.0"/>
+</session>

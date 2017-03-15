@@ -1,0 +1,3 @@
+This is a file of text to send. It should be sent word by word.
+Hopefully I can get the program working well enough to send all the text properly.
+That'd be fab.

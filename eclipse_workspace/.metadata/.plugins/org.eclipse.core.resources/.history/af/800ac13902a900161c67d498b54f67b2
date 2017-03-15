@@ -1,0 +1,131 @@
+//package cs.tcd.ie;
+
+import java.net.DatagramSocket;
+import java.net.DatagramPacket;
+import java.net.InetSocketAddress;
+
+import tcdIO.*;
+
+/**
+ * Client class
+ * An instance accepts user input 
+ */
+public class Client extends Node {
+	static final int DEFAULT_SRC_PORT = 50000;
+	static final int DEFAULT_DST_PORT = 50001;
+	static final String DEFAULT_DST_NODE = "localhost";	
+	
+	Terminal terminal;
+	InetSocketAddress dstAddress;
+	byte packetToSend;
+	byte expectedACK;
+	
+	
+	/**
+	 * Constructor
+	 * Attempts to create socket at given port and create an InetSocketAddress for the destinations
+	 */
+	Client(Terminal terminal, String dstHost, int dstPort, int srcPort) {
+		try {
+			packetToSend = 0;
+			expectedACK = 1;	
+			this.terminal = terminal;
+			dstAddress = new InetSocketAddress(dstHost, dstPort);
+			socket = new DatagramSocket(srcPort);
+			listener.go();
+		}
+		catch(java.lang.Exception e) {e.printStackTrace();}
+	}
+
+	
+	/**
+	 * Assume that incoming packets contain a String and print the string.
+	 */
+	//TODO reset method with original code
+	public void onReceipt(DatagramPacket packet) {
+		StringContent content = new StringContent(packet);
+		terminal.println(content.toString());
+		//TODO on receiving ACK packet signal
+	}
+
+	
+	/**
+	 * Sender Method
+	 * 
+	 */
+	public synchronized void start() throws Exception {
+		
+		DatagramPacket packet = null;
+		byte[] data = prepData();
+		packet = new DatagramPacket(data, data.length, dstAddress); 
+				
+		
+		
+		socket.send(packet);
+		//TODO startTimer
+		terminal.println("Packet sent");
+		
+		//handle retransmissions here
+		
+		this.wait();
+	}
+
+	
+	public byte[] prepData(){
+		byte[] data = null;
+		data = (terminal.readString("String to send: ")).getBytes();
+		terminal.println("Sending packet...");
+		
+		// 	 |	I'm aware that this is somewhat inefficient both 
+		// 	 |	in it's runtime and packet size, but it's not
+		//	 |	an enormous difference in the grand scale.
+		//	 V
+		
+		byte[] dataAndInfo = new byte[data.length+2];
+		
+		//set packetType & packetNumber
+		dataAndInfo[PACKET_TYPE_IDX] = DATA_TRANSMIT_PACKET;	
+		dataAndInfo[PACKET_NUMBER_IDX] = packetToSend;	
+		updatePacketToSend();
+		
+		for(int i=2; i<dataAndInfo.length; i++)
+			dataAndInfo[i] = data[i-2];
+		return dataAndInfo;
+	}
+	
+	
+	public void updatePacketToSend() {
+		packetToSend++;
+		if (packetToSend>1)
+			packetToSend=0;
+	}
+
+	
+	/**
+	 * Test method
+	 * 
+	 * Sends a packet to a given address
+	 */
+	public static void main(String[] args) {
+		try {
+			Terminal terminal = new Terminal("Client");
+			(new Client(terminal, DEFAULT_DST_NODE, DEFAULT_DST_PORT, DEFAULT_SRC_PORT)).start();
+			//TODO: allow multiple transmissions here
+			terminal.println("Program completed"); 
+		} catch(java.lang.Exception e) {e.printStackTrace();}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

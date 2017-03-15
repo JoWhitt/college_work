@@ -1,0 +1,58 @@
+//package cs.tcd.ie;
+
+import java.net.DatagramPacket;
+
+public class StringContent implements PacketContent {
+	static final int PACKET_TYPE_IDX = 0;
+	static final int PACKET_NUMBER_IDX = 1;
+	static final byte ACK_PACKET = 0;
+	static final byte NAK_PACKET = 1;
+	static final byte DATA_TRANSMIT_PACKET = 2;
+	
+	String string;
+	byte packetNumber;
+	byte packetType;
+	
+
+//--------------------------------------------------------	
+//CONSTRUCTORS
+	
+	public StringContent(DatagramPacket packet) { //TODO: fix initialisation of packet details
+		byte[] data;
+		
+		data = packet.getData();
+		packetType = data[PACKET_TYPE_IDX];
+		packetNumber = data[PACKET_NUMBER_IDX];
+
+		// 	 |	Inefficient but it's not
+		//	 |	a huge difference/problem
+		//	 |	in my opinion.
+		//	 V
+		byte[] stringData = new byte[data.length-2];
+		for (int i=PACKET_NUMBER_IDX+1;  i<stringData.length; i++)
+			stringData[i] = data[i+2];
+		string = new String(data);
+	}
+	
+	public StringContent(String string, byte packetType, byte packetNumber) {
+		this.string = string;
+		this.packetType = packetType;
+		this.packetNumber = packetNumber;
+	}
+//--------------------------------------------------------	
+//METHODS
+	
+	public String toString() {
+		return string;
+	}
+
+	public DatagramPacket toDatagramPacket() { 
+		DatagramPacket packet= null;
+		try {
+			byte[] data = string.getBytes(); //TODO: copy array including packetCounter at start
+			packet= new DatagramPacket(data, data.length);
+		}
+		catch(Exception e) {e.printStackTrace();}
+		return packet;
+	}
+}

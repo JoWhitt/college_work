@@ -1,0 +1,173 @@
+//package cs.tcd.ie;
+
+import java.net.DatagramSocket;
+import java.net.DatagramPacket;
+import java.net.InetSocketAddress;
+
+import tcdIO.*;
+
+/**
+ * Client class
+ * An instance accepts user input 
+ */
+public class Client extends Node {
+	static final int DEFAULT_SRC_PORT = 50000;
+	static final int DEFAULT_DST_PORT = 50001;
+	static final String DEFAULT_DST_NODE = "localhost";	
+	
+	Terminal terminal;
+	InetSocketAddress dstAddress;
+	
+	byte packetToSend;
+	
+	/**
+	 * Constructor
+	 * Attempts to create socket at given port and create an InetSocketAddress for the destinations
+	 */
+	Client(Terminal terminal, String dstHost, int dstPort, int srcPort) {
+		try {
+			packetToSend = 0;
+			expectedPacketNumber = 1;
+			expectedPacketType = ACK_PACKET;
+			
+			this.terminal = terminal;
+			dstAddress = new InetSocketAddress(dstHost, dstPort);
+			socket = new DatagramSocket(srcPort);
+			listener.go();
+		}
+		catch(java.lang.Exception e) {e.printStackTrace();}
+	}
+
+	
+	/**
+	 * Assume that incoming packets contain a String and print the string.
+	 */
+	//TODO reset method with original code?
+	public void onReceipt(DatagramPacket packet) {
+		StringContent content = new StringContent(packet);
+		
+		if (content.packetNumber==expectedPacketNumber && content.packetType==ACK_PACKET) {
+			terminal.println(content.toString());
+		}
+	}
+
+	
+	/**
+	 * Sender Method
+	 * 
+	 */
+	public synchronized void start() throws Exception {
+		
+		boolean finished = false;
+		while (!finished) {
+			
+			DatagramPacket packet = null;
+			byte[] data = prepData();
+			if (data==null) { //TODO not sure if null here will work
+				finished = false;
+			}
+			else {
+				packet = new DatagramPacket(data, data.length, dstAddress);
+				
+				boolean receivedACK = false;
+				while (!receivedACK) {
+					try {
+						socket.send(packet);
+						socket.setSoTimeout(TIMEOUT); //TODO double check this
+						terminal.println("Packet sent");
+						this.wait();
+						receivedACK = true;
+					}
+					catch ( java.net.SocketTimeoutException e) {
+						receivedACK = false;
+					}
+				}
+			}
+		}
+	}
+
+	
+	public byte[] prepData(){
+		byte[] data = null;
+		String str = terminal.readString("String to send: ");
+		if (str.equals(TERMINATE_STRING)){
+			return data; //null
+		}
+		else {
+			data = (str).getBytes();
+			terminal.println("Sending packet...");
+			
+			// 	 |	I'm aware that this is somewhat inefficient both 
+			// 	 |	in it's runtime and packet size, but it's not
+			//	 |	an enormous difference in the grand scale.
+			//	 V
+			byte[] dataAndInfo = new byte[data.length+2];
+			//set packetType & packetNumber
+			dataAndInfo[PACKET_TYPE_IDX] = DATA_TRANSMIT_PACKET;	
+			dataAndInfo[PACKET_NUMBER_IDX] = packetToSend;	
+			updatePacketToSend(); //TODO should this be in onReceipt() instead??
+			for(int i=2; i<dataAndInfo.length; i++)
+				dataAndInfo[i] = data[i-2];
+			return dataAndInfo;
+		}
+	}
+	
+	
+	/**
+	 * Update the variable packetToSend
+	 * 
+	 * if packetToSend is 0 then it becomes 1
+	 * if packetToSend is 1 then is becomes 0
+	 */
+	public void updatePacketToSend() {
+		packetToSend++;
+		if (packetToSend>1)
+			packetToSend=0;
+	}
+
+	
+	public static void main(String[] args) {
+		try {
+			Terminal terminal = new Terminal("Client");
+			Client thisClient = new Client(terminal, DEFAULT_DST_NODE, DEFAULT_DST_PORT, DEFAULT_SRC_PORT);
+			
+			boolean finished = false;
+			while (!finished) {
+				
+			}
+			//TODO: allow multiple transmissions here
+			thisClient.start();
+			
+			terminal.println("Program completed"); 
+		} catch(java.lang.Exception e) {e.printStackTrace();}
+	}
+	
+//-------------------------------------------------------------------
+	/**
+	 * Test method
+	 * 
+	 * Sends a packet to a given address
+	 */
+	/*public static void main(String[] args) {
+		try {
+			Terminal terminal = new Terminal("Client");
+			(new Client(terminal, DEFAULT_DST_NODE, DEFAULT_DST_PORT, DEFAULT_SRC_PORT)).start();
+			//TODO: allow multiple transmissions here
+			terminal.println("Program completed"); 
+		} catch(java.lang.Exception e) {e.printStackTrace();}
+	}*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;result&apos; in &apos;NineDigitPerfectSquare.containsAllDigitsOnce(...)&apos; to &apos;valid&apos;&#x0D;&#x0A;- Original project: &apos;A&amp;DS_Perfect_Squares&apos;&#x0D;&#x0A;- Original element: &apos;NineDigitPerfectSquare.containsAllDigitsOnce(int).result&apos;&#x0D;&#x0A;- Renamed element: &apos;result&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;result&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{NineDigitPerfectSquare.java[NineDigitPerfectSquare~containsAllDigitsOnce~I@result!1773!1794!1781!1786!Z!0!false" name="valid" references="true" stamp="1485880320590" version="1.0"/>
+</session>
