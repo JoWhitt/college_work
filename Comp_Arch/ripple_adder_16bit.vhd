@@ -29,10 +29,16 @@ end ripple_adder_16bit;
 
 architecture Behavioral of ripple_adder_16bit is
 -- COMPONENTS
-	
+	component full_adder is
+		Port (  A: in  STD_LOGIC;
+				  B: in  STD_LOGIC;
+				  c_in: in  STD_LOGIC;
+				  c_out: out  STD_LOGIC;
+				  S: out  STD_LOGIC);
+	end component;
 
 begin
-
+-- PORT MAPS
 
 end Behavioral;
 
