@@ -25,14 +25,14 @@ entity full_adder is
            B: in  STD_LOGIC;
            c_in: in  STD_LOGIC;
            c_out: out  STD_LOGIC;
-           S: out  STD_LOGIC);
+           Sum: out  STD_LOGIC);
 end full_adder;
 
 architecture Behavioral of full_adder is
 
 begin
-c_out	<= (A and B) or ((A xor B) and c_in)	after 5 ns;
-S		<= ((A xor B) xor c_in)						after 5 ns;
+c_out	<= (A and B) or ((A xor B) and c_in)	after 1 ns;
+Sum	<= ((A xor B) xor c_in)						after 1 ns;
 
 end Behavioral;
 

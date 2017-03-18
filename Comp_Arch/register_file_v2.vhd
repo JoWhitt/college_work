@@ -19,18 +19,8 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
 entity register_file_v2 is
-    Port ( load : in  STD_LOGIC;
+    Port ( load_enable, CLK: in  STD_LOGIC;
            dest_select_0, dest_select_1, dest_select_2 : in  STD_LOGIC;
            Asel0, Asel1, Asel2, Bsel0, Bsel1, Bsel2 : in  STD_LOGIC;
            DData : in  STD_LOGIC_VECTOR (15 downto 0);
@@ -62,60 +52,70 @@ signal decode0_q,decode1_q,decode2_q,decode3_q,decode4_q,decode5_q,decode6_q,dec
 signal reg0_q,reg1_q,reg2_q,reg3_q,reg4_q,reg5_q,reg6_q,reg7_q: std_logic_vector(15 downto 0);
 
 begin
+
+load_r0 <= load_enable and decode0_q;
+load_r1 <= load_enable and decode1_q;
+load_r2 <= load_enable and decode2_q;
+load_r3 <= load_enable and decode3_q;
+load_r4 <= load_enable and decode4_q;
+load_r5 <= load_enable and decode5_q;
+load_r6 <= load_enable and decode6_q;
+load_r7 <= load_enable and decode7_q;
+
 --PORT MAPS	
 	--Registers (8)
 	reg00: reg PORT MAP(
-		D => data_src_mux_out,
-		load => decode0_q and load_r0,
+		D => DData,
+		load => load_r0,
 		Clk => Clk,
 		Q => reg0_q
 	);
 	
 	reg01: reg PORT MAP(
-		D => data_src_mux_out,
-		load => decode1_q and load_r1,
+		D => DData,
+		load => load_r1,
 		Clk => Clk,
 		Q => reg1_q
 	);
 	
 	reg02: reg PORT MAP(
-		D => data_src_mux_out,
-		load => decode2_q and load_r2,
+		D => DData,
+		load => load_r2,
 		Clk => Clk,
 		Q => reg2_q
 	);
 
 	reg03: reg PORT MAP(
-		D => data_src_mux_out,
-		load => decode3_q and load_r3,
+		D => DData,
+		load => load_r3,
 		Clk => Clk,
 		Q => reg3_q
 	);
 	
 	reg04: reg PORT MAP(
-		D => data_src_mux_out,
-		load => decode4_q and load_r4,
+		D => DData,
+		load => load_r4,
 		Clk => Clk,
 		Q => reg4_q
 	);
 	
 	reg05: reg PORT MAP(
-		D => data_src_mux_out,
-		load => decode5_q and load_r5,
+		D => DData,
+		load => load_r5,
 		Clk => Clk,
 		Q => reg5_q
 	);
 
 	reg06: reg PORT MAP(
-		D => data_src_mux_out,
-		load => decode6_q and load_r6,
+		D => DData,
+		load => load_r6,
 		Clk => Clk,
 		Q => reg6_q
 	);
 
 	reg07: reg PORT MAP(
-		D => data_src_mux_out,
-		load => decode7_q and load_r7,
+		D => DData,
+		load => load_r7,
 		Clk => Clk,
 		Q => reg7_q
 	);
