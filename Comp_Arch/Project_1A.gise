@@ -81,6 +81,7 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="register_file_v2_tb_stx_beh.prj"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="register_file_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="register_file_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ripple_adder_16bit_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
@@ -98,9 +99,14 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1489856642" xil_pn:in_ck="-2147998006077690522" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1489856642">
+    <transform xil_pn:end_ts="1490007727" xil_pn:in_ck="-2147998006077690522" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1490007727">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Register.vhd"/>
       <outfile xil_pn:name="decoder_3to8.vhd"/>
       <outfile xil_pn:name="decoder_3to8_tb.vhd"/>
@@ -122,10 +128,12 @@
     <transform xil_pn:end_ts="1489856162" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-4592676170565546307" xil_pn:start_ts="1489856162">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
     <transform xil_pn:end_ts="1489856162" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="2763211615351021093" xil_pn:start_ts="1489856162">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
     <transform xil_pn:end_ts="1489848711" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="6405147271257014651" xil_pn:start_ts="1489848711">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -134,6 +142,11 @@
     <transform xil_pn:end_ts="1489856642" xil_pn:in_ck="-2147998006077690522" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1489856642">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Register.vhd"/>
       <outfile xil_pn:name="decoder_3to8.vhd"/>
       <outfile xil_pn:name="decoder_3to8_tb.vhd"/>
@@ -155,7 +168,11 @@
     <transform xil_pn:end_ts="1489856644" xil_pn:in_ck="-2147998006077690522" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="8133821920460245912" xil_pn:start_ts="1489856642">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="full_adder_tb_beh.prj"/>
       <outfile xil_pn:name="full_adder_tb_isim_beh.exe"/>
@@ -167,6 +184,8 @@
     <transform xil_pn:end_ts="1489856644" xil_pn:in_ck="-4582553340826782226" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3761930661494164614" xil_pn:start_ts="1489856644">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="full_adder_tb_isim_beh.wdb"/>
