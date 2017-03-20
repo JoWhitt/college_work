@@ -54,10 +54,10 @@ architecture Behavioral of function_unit is
 	end component;
 	
 --	SIGNALS
-	
+	signal ALU_out, shifter_out: STD_LOGIC_VECTOR (15 downto 0);
 
 begin
-
+	
 
 end Behavioral;
 

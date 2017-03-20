@@ -51,7 +51,6 @@ ARCHITECTURE behavior OF mux2_16bit_tb IS
    signal Z : std_logic_vector(15 downto 0);
  
 BEGIN
- 
 	-- Instantiate the Unit Under Test (UUT)
    uut: mux2_16bit PORT MAP (
           S => S,
