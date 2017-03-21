@@ -24,8 +24,6 @@ use ieee.numeric_std.all;
 entity arithmetic_logic_unit is
     Port ( dataA, dataB : in  STD_LOGIC_VECTOR (15 downto 0);
            FS_code : in  STD_LOGIC_VECTOR (4 downto 0);
-		   --H_sel :  in  STD_LOGIC_VECTOR (1 downto 0);
-		   --C_in : in  STD_LOGIC;
            V, C_out : out  STD_LOGIC;
            dataG : out  STD_LOGIC_VECTOR (15 downto 0));
 end arithmetic_logic_unit;
@@ -33,49 +31,22 @@ end arithmetic_logic_unit;
 architecture Behavioral of arithmetic_logic_unit is
 
 begin
-	arithmeticProcess: process is 
-	begin
-		if FS_code="00000" then
-			dataG <= dataA; 
-		elsif FS_code="00001" then
-			dataG <= std_logic_vector( unsigned(dataA) + 1); 
-		elsif FS_code="00010" then
-			dataG <= std_logic_vector( unsigned(dataA) + unsigned(dataB));
-		elsif FS_code="00011" then
-			dataG <= std_logic_vector( unsigned(dataA) + unsigned(dataB) + 1); 
-		elsif FS_code="00100" then
-			dataG <= std_logic_vector( unsigned(dataA) + unsigned(not dataB)); 
-		elsif FS_code="00101" then
-			dataG <= std_logic_vector( unsigned(dataA) + unsigned(not dataB) + 1);
-		elsif FS_code="00110" then
-			dataG <= std_logic_vector( unsigned(dataA) - 1); 
-		elsif FS_code="00111" then 
-			dataG <= dataA; 
-				
-		elsif FS_code="01000" then
-			dataG <= dataA and dataB; 
-		elsif FS_code="01010" then
-			dataG <= dataA or dataB; 
-		elsif FS_code="01100" then
-			dataG <= dataA xor dataB; 
-		elsif FS_code="01110" then
-			dataG <= not dataA;
-		
-		--elsif FS_code="10000" then
-		--	dataG <= dataB; 
-		--elsif FS_code="10100" then
-		--	dataG <= std_logic_vector( unsigned(dataB) * 2);
-		--elsif FS_code="11000" then
-		--	dataG <= std_logic_vector( unsigned(dataB) / 2);
-		end if;
-	end process arithmeticProcess;
 	
-	--TODO: set flags
-	c <= '1' when (dataA(15) and dataB(15))
-				or ( (dataA(15) or dataB(15)) and (dataA(14) and dataB(14)) )
-				or ( (dataA(15) or dataB(15)) and (dataA(14) or dataB(14)) and (dataA(13) and dataB(13)))
-				--etc...
-			else '0';
-
+	dataG <= dataA 																			after 5 ns when FS_code="00000" else 
+				std_logic_vector( unsigned(dataA) + 1) 								after 5 ns when FS_code="00001" else 
+				std_logic_vector( unsigned(dataA) + unsigned(dataB))				after 5 ns when FS_code="00010" else
+				std_logic_vector( unsigned(dataA) + unsigned(dataB) + 1)			after 5 ns when FS_code="00011" else
+				std_logic_vector( unsigned(dataA) + unsigned(not dataB))			after 5 ns when FS_code="00100" else
+				std_logic_vector( unsigned(dataA) + unsigned(not dataB) + 1)	after 5 ns when FS_code="00101" else
+				std_logic_vector( unsigned(dataA) - 1)									after 5 ns when FS_code="00110" else
+				dataA																				after 5 ns when FS_code="00111" else
+				dataA and dataB	after 5 ns when FS_code="01000" else
+				dataA or dataB		after 5 ns when FS_code="01010" else
+				dataA xor dataB	after 5 ns when FS_code="01100" else
+				not dataA			after 5 ns when FS_code="01110";
+				
+	V <= '0';
+	C_out <= '0';
+				
 end Behavioral;
 

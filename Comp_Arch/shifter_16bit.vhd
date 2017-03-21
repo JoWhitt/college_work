@@ -21,16 +21,15 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity shifter_16bit is
-    Port ( input: in STD_LOGIC_VECTOR(15 to 0);
+    Port ( input: in STD_LOGIC_VECTOR(15 downto 0);
            sel0,sel1,sel2,sel3 : in  STD_LOGIC;
-           y: out STD_LOGIC_VECTOR(15 to 0) );
+           y: out STD_LOGIC_VECTOR(15 downto 0) );
 end shifter_16bit;
 
 architecture Behavioral of shifter_16bit is
 --COMPONENTS
 	component mux16_1bit is
-	Port ( in0,in1,in2,in3,in4,in5,in6,in7,in8: in STD_LOGIC;
-				in9,in10,in11,in12,in13,in14,in15: in STD_LOGIC;
+	Port ( in0,in1,in2,in3,in4,in5,in6,in7,in8,in9,in10,in11,in12,in13,in14,in15: in STD_LOGIC;
 			 s0,s1,s2,s3: in STD_LOGIC;
 			 z: out STD_LOGIC );
 	end component;
@@ -192,7 +191,7 @@ begin
 		in7 => input(15),
 		in8 => input(14),
 		in9 => input(13),
-		in10 => input(21),
+		in10 => input(12),
 		in11 => input(11),
 		in12 => input(10),
 		in13 => input(9),

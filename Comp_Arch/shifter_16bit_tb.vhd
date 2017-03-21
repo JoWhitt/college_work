@@ -35,9 +35,9 @@
   ARCHITECTURE behavior OF testbench IS 
 
     component shifter_16bit
-	 Port ( input: in STD_LOGIC_VECTOR(15 to 0);
+	 Port ( input: in STD_LOGIC_VECTOR(15 downto 0);
            sel0,sel1,sel2,sel3 : in  STD_LOGIC;
-           y: out STD_LOGIC_VECTOR(15 to 0) );
+           y: out STD_LOGIC_VECTOR(15 downto 0) );
 	 end component;
 	 
   -- INPUT
