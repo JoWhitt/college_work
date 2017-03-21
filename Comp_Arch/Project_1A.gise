@@ -26,7 +26,9 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="arithmetic_logic_unit_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="decoder_3to8_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="decoder_3to8_tb_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="full_adder_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="full_adder_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="function_unit_stx_beh.prj"/>
@@ -80,6 +82,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="register_file_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="register_file_xst.xrpt"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ripple_adder_16bit_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testbench_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
@@ -97,7 +100,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1490100989" xil_pn:in_ck="8014745452674345697" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1490100989">
+    <transform xil_pn:end_ts="1490121015" xil_pn:in_ck="9063841234557986144" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1490121015">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Register.vhd"/>
@@ -117,14 +120,15 @@
       <outfile xil_pn:name="register_file_v2_tb.vhd"/>
       <outfile xil_pn:name="ripple_adder_16bit.vhd"/>
       <outfile xil_pn:name="shifter_16bit.vhd"/>
+      <outfile xil_pn:name="shifter_16bit_tb.vhd"/>
       <outfile xil_pn:name="zero_detect_16.vhd"/>
       <outfile xil_pn:name="zero_detect_tb.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1490096777" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-6737575615647608970" xil_pn:start_ts="1490096777">
+    <transform xil_pn:end_ts="1490120493" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="4434870115928851094" xil_pn:start_ts="1490120493">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1490096777" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3464161664155245054" xil_pn:start_ts="1490096777">
+    <transform xil_pn:end_ts="1490120493" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5040905166384238306" xil_pn:start_ts="1490120493">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -132,13 +136,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1490100730" xil_pn:in_ck="8014745452674345697" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1490100730">
+    <transform xil_pn:end_ts="1490121015" xil_pn:in_ck="9063841234557986144" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1490121015">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Register.vhd"/>
       <outfile xil_pn:name="arithmetic_logic_unit.vhd"/>
       <outfile xil_pn:name="decoder_3to8.vhd"/>
@@ -156,19 +156,18 @@
       <outfile xil_pn:name="register_file_v2_tb.vhd"/>
       <outfile xil_pn:name="ripple_adder_16bit.vhd"/>
       <outfile xil_pn:name="shifter_16bit.vhd"/>
+      <outfile xil_pn:name="shifter_16bit_tb.vhd"/>
       <outfile xil_pn:name="zero_detect_16.vhd"/>
       <outfile xil_pn:name="zero_detect_tb.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1490100731" xil_pn:in_ck="8014745452674345697" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="7814018779979972170" xil_pn:start_ts="1490100730">
+    <transform xil_pn:end_ts="1490121017" xil_pn:in_ck="9063841234557986144" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5959187333195769846" xil_pn:start_ts="1490121015">
       <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputChanged"/>
     </transform>
-    <transform xil_pn:end_ts="1490100246" xil_pn:in_ck="-4582553340826782226" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-6288355354277915432" xil_pn:start_ts="1490100246">
+    <transform xil_pn:end_ts="1490120016" xil_pn:in_ck="-4582553340826782226" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-6288355354277915432" xil_pn:start_ts="1490120016">
       <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForced"/>
       <outfile xil_pn:name="isim.cmd"/>

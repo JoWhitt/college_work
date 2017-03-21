@@ -22,8 +22,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity function_unit is
     Port ( busA, busB : in  STD_LOGIC_VECTOR (15 downto 0);
-           FS : in  STD_LOGIC_VECTOR (6 downto 2);
-           V, C, N, S : out  STD_LOGIC;
+           FSel : in  STD_LOGIC_VECTOR (4 downto 0);
+           V, C, N, Z : out  STD_LOGIC;
            F : out  STD_LOGIC_VECTOR (15 downto 0));
 end function_unit;
 
@@ -57,7 +57,36 @@ architecture Behavioral of function_unit is
 	signal ALU_out, shifter_out: STD_LOGIC_VECTOR (15 downto 0);
 
 begin
+--PORT DECLARATIONS
+	ALU: arithmetic_logic_unit port map (
+		dataA => busA, 
+		dataB => busB,
+		FS_code => FSel,
+		V => V,
+		C_out => C,
+		dataG => ALU_out
+	);
+			  
+	shifter: shifter_16bit port map (
+		input => busB,
+		sel0 => FSel(0), --TODO: confirm
+		sel1 => FSel(1),
+		sel2 => FSel(2),
+		sel3 => FSel(3),
+		y => shifter_out
+	);
 	
+	z_flag: zero_detect_16 port map (
+		data => ALU_out,
+		z => Z
+	);
+	
+	muxF: mux2_16bit port map (
+		S => FSel(4),	--TODO: confirm
+		In0 => ALU_out,
+		In1 => shifter_out,
+		Z => F
+	);
 
 end Behavioral;
 

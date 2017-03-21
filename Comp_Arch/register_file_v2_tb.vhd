@@ -28,9 +28,6 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
-use ieee.std_logic_arith.all;
-LIBRARY UNISIM;
-USE UNISIM.Vcomponents.ALL;
  
 ENTITY register_file_v2_tb IS
 END register_file_v2_tb;
@@ -87,44 +84,31 @@ BEGIN
    -- Stimulus process
    stim_proc: process
    begin		
-      -- hold reset state for 100 ns.
-      wait for 10 ns;	
-
-		--load_enable, CLK : in  STD_LOGIC;
-		--dest_select, Asel, Bsel : in  STD_LOGIC_VECTOR(2 downto 0);
-		--DData : in  STD_LOGIC_VECTOR (15 downto 0);
-		--AData, BData : out  STD_LOGIC_VECTOR (15 downto 0));
-
+	
+      wait for 10 ns;
 		load_enable <= '1';
 		DData <= "0000000000000011";
 		dest_select <= "000";
 		
+		--set registers to unique values
 		for i in 0 to 7 loop
 			wait for CLK_period*2;
 			dest_select <= STD_LOGIC_VECTOR (unsigned(dest_select) + 1);
-			DData <= STD_LOGIC_VECTOR (DData + DData + DData + DData);
+			wait for CLK_period*2;
+			DData <= STD_LOGIC_VECTOR (unsigned(DData) +16);
+			wait for CLK_period*2;
 		end loop;
 		
-		DData <= "0000000000000000";
-		dest_select <= "000";
-		
-		wait for CLK_period*2;
-		DData <= "0000000000000000";
-		dest_select <= "001";
-		
-		wait for CLK_period*2;
+		--read each register from A and B outputs
 		Asel <= "000";
 		Bsel <= "000";
+		for i in 0 to 7 loop
+			wait for CLK_period*3;
+			Asel <= STD_LOGIC_VECTOR (unsigned(Asel) + 1);
+			wait for CLK_period;
+			Bsel <= STD_LOGIC_VECTOR (unsigned(Bsel) + 1);
+		end loop;
 		
-		wait for CLK_period*2;
-		Asel <= "000";
-		Bsel <= "000";
-		
-		wait for CLK_period*2;
-		Asel <= "000";
-		Bsel <= "000";
-		
-
       wait;
    end process;
 

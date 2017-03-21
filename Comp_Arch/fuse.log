@@ -1,16 +1,14 @@
-Running: C:\Xilinx\13.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o U:/GitHub/college_work/Comp_Arch/register_file_v2_tb_isim_beh.exe -prj U:/GitHub/college_work/Comp_Arch/register_file_v2_tb_beh.prj work.register_file_v2_tb 
+Running: C:\Xilinx\13.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o U:/GitHub/college_work/Comp_Arch/testbench_isim_beh.exe -prj U:/GitHub/college_work/Comp_Arch/testbench_beh.prj work.testbench 
 ISim O.61xd (signature 0x1cce1bb2)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Parsing VHDL file "U:/GitHub/college_work/Comp_Arch/Register.vhd" into library work
-Parsing VHDL file "U:/GitHub/college_work/Comp_Arch/mux8_16bit.vhd" into library work
-Parsing VHDL file "U:/GitHub/college_work/Comp_Arch/decoder_3to8.vhd" into library work
-Parsing VHDL file "U:/GitHub/college_work/Comp_Arch/register_file_v2.vhd" into library work
-Parsing VHDL file "U:/GitHub/college_work/Comp_Arch/register_file_v2_tb.vhd" into library work
-ERROR:HDLCompiler:69 - "U:/GitHub/college_work/Comp_Arch/register_file_v2_tb.vhd" Line 100: <unsigned> is not declared.
-ERROR:HDLCompiler:622 - "U:/GitHub/college_work/Comp_Arch/register_file_v2_tb.vhd" Line 100: Near std_logic_vector ; type conversion expression type cannot be determined uniquely
-ERROR:HDLCompiler:69 - "U:/GitHub/college_work/Comp_Arch/register_file_v2_tb.vhd" Line 101: <unsigned> is not declared.
-ERROR:HDLCompiler:622 - "U:/GitHub/college_work/Comp_Arch/register_file_v2_tb.vhd" Line 101: Near std_logic_vector ; type conversion expression type cannot be determined uniquely
-ERROR:HDLCompiler:854 - "U:/GitHub/college_work/Comp_Arch/register_file_v2_tb.vhd" Line 34: Unit <behavior> ignored due to previous errors.
-VHDL file U:/GitHub/college_work/Comp_Arch/register_file_v2_tb.vhd ignored due to errors
+Parsing VHDL file "U:/GitHub/college_work/Comp_Arch/mux16_1bit.vhd" into library work
+Parsing VHDL file "U:/GitHub/college_work/Comp_Arch/shifter_16bit.vhd" into library work
+Parsing VHDL file "U:/GitHub/college_work/Comp_Arch/shifter_16bit_tb.vhd" into library work
+Starting static elaboration
+WARNING:HDLCompiler:746 - "U:/GitHub/college_work/Comp_Arch/shifter_16bit_tb.vhd" Line 38: Range is empty (null range)
+WARNING:HDLCompiler:746 - "U:/GitHub/college_work/Comp_Arch/shifter_16bit_tb.vhd" Line 40: Range is empty (null range)
+ERROR:HDLCompiler:1566 - "U:/GitHub/college_work/Comp_Arch/shifter_16bit_tb.vhd" Line 53: Expression has 16 elements ; formal input expects 0
+ERROR:HDLCompiler:1566 - "U:/GitHub/college_work/Comp_Arch/shifter_16bit_tb.vhd" Line 58: Expression has 16 elements ; formal y expects 0
+ERROR:Simulator:777 - Static elaboration of top level VHDL design unit testbench in library work failed

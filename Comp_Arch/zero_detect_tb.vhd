@@ -33,19 +33,16 @@ END zero_detect_tb;
  
 ARCHITECTURE behavior OF zero_detect_tb IS 
  
-    -- Component Declaration for the Unit Under Test (UUT)
-    COMPONENT zero_detect_16
-    PORT(
+   -- Component Declaration for the Unit Under Test (UUT)
+   COMPONENT zero_detect_16
+   PORT(
          data : IN  std_logic_vector(15 downto 0);
          z : OUT  std_logic
         );
-    END COMPONENT;
+   END COMPONENT;
     
-
-   --Inputs
+   --SIGNALS
    signal data : std_logic_vector(15 downto 0) := (others => '0');
-
- 	--Outputs
    signal z : std_logic;
  
 BEGIN

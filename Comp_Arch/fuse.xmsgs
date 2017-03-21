@@ -5,16 +5,19 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="607" delta="unknown" >"U:/GitHub/college_work/Comp_Arch/register_file_v2_tb.vhd" Line 104: Multiple declarations of <arg fmt="%s" index="1">unsigned</arg> included via multiple use clauses; none are made directly visible
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"U:/GitHub/college_work/Comp_Arch/shifter_16bit_tb.vhd" Line 38: Range is empty (null range)
 </msg>
 
-<msg type="error" file="HDLCompiler" num="1731" delta="unknown" >"U:/GitHub/college_work/Comp_Arch/register_file_v2_tb.vhd" Line 105: found &apos;<arg fmt="%d" index="1">0</arg>&apos; definitions of operator <arg fmt="%s" index="2">&quot;+&quot;</arg>, cannot determine exact overloaded matching definition for <arg fmt="%s" index="2">&quot;+&quot;</arg>
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"U:/GitHub/college_work/Comp_Arch/shifter_16bit_tb.vhd" Line 40: Range is empty (null range)
 </msg>
 
-<msg type="error" file="HDLCompiler" num="622" delta="unknown" >"U:/GitHub/college_work/Comp_Arch/register_file_v2_tb.vhd" Line 105: Near <arg fmt="%s" index="1">std_logic_vector</arg> ; type conversion expression type cannot be determined uniquely
+<msg type="error" file="HDLCompiler" num="1566" delta="unknown" >"U:/GitHub/college_work/Comp_Arch/shifter_16bit_tb.vhd" Line 53: Expression has <arg fmt="%d" index="1">16</arg> elements ; formal <arg fmt="%s" index="2">input</arg> expects <arg fmt="%d" index="3">0</arg>
 </msg>
 
-<msg type="error" file="HDLCompiler" num="854" delta="unknown" >"U:/GitHub/college_work/Comp_Arch/register_file_v2_tb.vhd" Line 38: Unit &lt;<arg fmt="%s" index="1">behavior</arg>&gt; ignored due to previous errors.
+<msg type="error" file="HDLCompiler" num="1566" delta="unknown" >"U:/GitHub/college_work/Comp_Arch/shifter_16bit_tb.vhd" Line 58: Expression has <arg fmt="%d" index="1">16</arg> elements ; formal <arg fmt="%s" index="2">y</arg> expects <arg fmt="%d" index="3">0</arg>
+</msg>
+
+<msg type="error" file="Simulator" num="777" delta="unknown" >Static elaboration of top level VHDL design unit <arg fmt="%s" index="1">testbench</arg> in library <arg fmt="%s" index="2">work</arg> failed
 </msg>
 
 </messages>

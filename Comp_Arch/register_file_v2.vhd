@@ -75,7 +75,6 @@ load_r5 <= load_enable and decode5_q;
 load_r6 <= load_enable and decode6_q;
 load_r7 <= load_enable and decode7_q;
 
---PORT MAPS	
 	--Registers (8)
 	reg00: reg PORT MAP(
 		D => DData,
