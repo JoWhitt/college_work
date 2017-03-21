@@ -104,7 +104,7 @@ BEGIN
 		
 		-- Q2(a) Loading straight into the registers
 		src_S0<='0'; src_S1<='0'; src_S2<='0';
-      data_src <= '0';
+		data_src <= '0';
 		data <= "0000000000000000";
 		
 		-- 0

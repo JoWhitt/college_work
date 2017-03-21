@@ -1,19 +1,16 @@
-Running: C:\Xilinx\13.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o U:/GitHub/college_work/Comp_Arch/full_adder_tb_isim_beh.exe -prj U:/GitHub/college_work/Comp_Arch/full_adder_tb_beh.prj work.full_adder_tb 
+Running: C:\Xilinx\13.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o U:/GitHub/college_work/Comp_Arch/register_file_v2_tb_isim_beh.exe -prj U:/GitHub/college_work/Comp_Arch/register_file_v2_tb_beh.prj work.register_file_v2_tb 
 ISim O.61xd (signature 0x1cce1bb2)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Parsing VHDL file "U:/GitHub/college_work/Comp_Arch/full_adder.vhd" into library work
-Parsing VHDL file "U:/GitHub/college_work/Comp_Arch/full_adder_tb.vhd" into library work
-Starting static elaboration
-Completed static elaboration
-Compiling package standard
-Compiling package std_logic_1164
-Compiling architecture behavioral of entity full_adder [full_adder_default]
-Compiling architecture behavior of entity full_adder_tb
-Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-Compiled 5 VHDL Units
-Built simulation executable U:/GitHub/college_work/Comp_Arch/full_adder_tb_isim_beh.exe
-Fuse Memory Usage: 20560 KB
-Fuse CPU Usage: 124 ms
+Parsing VHDL file "U:/GitHub/college_work/Comp_Arch/Register.vhd" into library work
+Parsing VHDL file "U:/GitHub/college_work/Comp_Arch/mux8_16bit.vhd" into library work
+Parsing VHDL file "U:/GitHub/college_work/Comp_Arch/decoder_3to8.vhd" into library work
+Parsing VHDL file "U:/GitHub/college_work/Comp_Arch/register_file_v2.vhd" into library work
+Parsing VHDL file "U:/GitHub/college_work/Comp_Arch/register_file_v2_tb.vhd" into library work
+ERROR:HDLCompiler:69 - "U:/GitHub/college_work/Comp_Arch/register_file_v2_tb.vhd" Line 100: <unsigned> is not declared.
+ERROR:HDLCompiler:622 - "U:/GitHub/college_work/Comp_Arch/register_file_v2_tb.vhd" Line 100: Near std_logic_vector ; type conversion expression type cannot be determined uniquely
+ERROR:HDLCompiler:69 - "U:/GitHub/college_work/Comp_Arch/register_file_v2_tb.vhd" Line 101: <unsigned> is not declared.
+ERROR:HDLCompiler:622 - "U:/GitHub/college_work/Comp_Arch/register_file_v2_tb.vhd" Line 101: Near std_logic_vector ; type conversion expression type cannot be determined uniquely
+ERROR:HDLCompiler:854 - "U:/GitHub/college_work/Comp_Arch/register_file_v2_tb.vhd" Line 34: Unit <behavior> ignored due to previous errors.
+VHDL file U:/GitHub/college_work/Comp_Arch/register_file_v2_tb.vhd ignored due to errors

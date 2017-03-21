@@ -32,41 +32,41 @@ end arithmetic_logic_unit;
 architecture Behavioral of arithmetic_logic_unit is
 
 begin
-	if ( FS_code(4 downto 3)='00') {
-		if ( FS_code(2 downto 0)="000" ) {
-			dataG <= dataA; }
-		else if ( FS_code(2 downto 0)="001" ) {
-			dataG <= dataA + '1'; }
-		else if ( FS_code(2 downto 0)="010" ) {
-			dataG <= dataA + dataB; }
-		else if ( FS_code(2 downto 0)="011" ) {
-			dataG <= dataA + dataB + '1'; }
-		else if ( FS_code(2 downto 0)="100" ) {
-			dataG <= dataA + (not dataB); }
-		else if ( FS_code(2 downto 0)="101" ) {
-			dataG <= dataA + (not dataB) + '1'; }
-		else if ( FS_code(2 downto 0)="110" ) {
-			dataG <= dataA - 1; }
-		else {
-			dataG <= dataA; }
-	}
-	else if ( FS_code(4 downto 3)='01') {
-		if ( FS_code(2 downto 0)="000" ) {
-			dataG <= dataA and dataB; }
-		else if ( FS_code(2 downto 0)="010" ) {
-			dataG <= dataA or dataB; }
-		else if ( FS_code(2 downto 0)="100" ) {
-			dataG <= dataA xor dataB; }
-		else if ( FS_code(2 downto 0)="110" ) {
-			dataG <= not dataA; }
-	}
-	else {
-		if ( FS_code(3 downto 0)="0000" ) {
-			dataG <= dataB; }
-		else if ( FS_code(3 downto 0)="0100" ) {
-			dataG <= dataB * 2; }
-		else if ( FS_code(3 downto 0)="1000" ) {
-			dataG <= dataB / 2; }
-	}
+	arithmeticProcess: process(FS_code) is 
+	begin
+		if FS_code="00000" then
+			dataG <= dataA; 
+		elsif FS_code="00001" then
+			dataG <= dataA + '1'; 
+		elsif FS_code="00010" then
+			dataG <= dataA + dataB;
+		elsif FS_code="00011" then
+			dataG <= dataA + dataB + '1'; 
+		elsif FS_code="00100" then
+			dataG <= dataA + (not dataB); 
+		elsif FS_code="00101" then
+			dataG <= dataA + (not dataB) + '1';
+		elsif FS_code="00110" then
+			dataG <= dataA - 1; 
+		elsif FS_code="00111" then 
+			dataG <= dataA; 
+				
+		elsif FS_code="01000" then
+			dataG <= dataA and dataB; 
+		elsif FS_code="01010" then
+			dataG <= dataA or dataB; 
+		elsif FS_code="01100" then
+			dataG <= dataA xor dataB; 
+		elsif FS_code="01110" then
+			dataG <= not dataA;
+		
+		elsif FS_code="10000" then
+			dataG <= dataB; 
+		elsif FS_code="10100" then
+			dataG <= dataB * 2; 
+		elsif FS_code="11000" then
+			dataG <= dataB / 2; 
+		end if;
+	end process arithmeticProcess;
 end Behavioral;
 

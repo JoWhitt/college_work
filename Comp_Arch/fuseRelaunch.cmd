@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "U:/GitHub/college_work/Comp_Arch/full_adder_tb_isim_beh.exe" -prj "U:/GitHub/college_work/Comp_Arch/full_adder_tb_beh.prj" "work.full_adder_tb" 
+-intstyle "ise" -incremental -o "U:/GitHub/college_work/Comp_Arch/register_file_v2_tb_isim_beh.exe" -prj "U:/GitHub/college_work/Comp_Arch/register_file_v2_tb_beh.prj" "work.register_file_v2_tb" 

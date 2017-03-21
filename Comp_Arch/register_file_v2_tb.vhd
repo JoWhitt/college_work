@@ -27,6 +27,10 @@
 --------------------------------------------------------------------------------
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
+USE ieee.numeric_std.ALL;
+use ieee.std_logic_arith.all;
+LIBRARY UNISIM;
+USE UNISIM.Vcomponents.ALL;
  
 ENTITY register_file_v2_tb IS
 END register_file_v2_tb;
@@ -37,8 +41,7 @@ ARCHITECTURE behavior OF register_file_v2_tb IS
  
     COMPONENT register_file_v2
     PORT(  load_enable, CLK : in  STD_LOGIC;
-           dest_select_0, dest_select_1, dest_select_2 : in  STD_LOGIC;
-           Asel0, Asel1, Asel2, Bsel0, Bsel1, Bsel2 : in  STD_LOGIC;
+           dest_select, Asel, Bsel : in  STD_LOGIC_VECTOR(2 downto 0);
            DData : in  STD_LOGIC_VECTOR (15 downto 0);
            AData, BData : out  STD_LOGIC_VECTOR (15 downto 0));
     END COMPONENT;
@@ -47,8 +50,8 @@ ARCHITECTURE behavior OF register_file_v2_tb IS
    --Inputs
    signal load_enable: std_logic := '0';
 	signal CLK: std_logic:= '0';
-   signal dest_select_0, dest_select_1, dest_select_2: std_logic := '0';
-   signal Asel0, Asel1, Asel2, Bsel0, Bsel1, Bsel2: std_logic := '0';
+   signal dest_select: std_logic_vector(2 downto 0) := (others => '0');
+   signal Asel, Bsel: std_logic_vector(2 downto 0) := (others => '0');
    signal DData: std_logic_vector(15 downto 0) := (others => '0');
 
  	--Outputs
@@ -63,15 +66,9 @@ BEGIN
    uut: register_file_v2 PORT MAP (
           load_enable => load_enable,
 			 CLK => CLK,
-          dest_select_0 => dest_select_0,
-          dest_select_1 => dest_select_1,
-          dest_select_2 => dest_select_2,
-          Asel0 => Asel0,
-          Asel1 => Asel1,
-          Asel2 => Asel2,
-          Bsel0 => Bsel0,
-          Bsel1 => Bsel1,
-          Bsel2 => Bsel2,
+          dest_select => dest_select,
+          Asel => Asel,
+          Bsel => Bsel,
           DData => DData,
           AData => AData,
           BData => BData
@@ -91,13 +88,45 @@ BEGIN
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
-      wait for 100 ns;	
+      wait for 10 ns;	
 
-      -- wait for <clock>_period*10;
+		--load_enable, CLK : in  STD_LOGIC;
+		--dest_select, Asel, Bsel : in  STD_LOGIC_VECTOR(2 downto 0);
+		--DData : in  STD_LOGIC_VECTOR (15 downto 0);
+		--AData, BData : out  STD_LOGIC_VECTOR (15 downto 0));
 
-      -- insert stimulus here 
+		load_enable <= '1';
+		DData <= "0000000000000011";
+		dest_select <= "000";
+		
+		for i in 0 to 7 loop
+			wait for CLK_period*2;
+			dest_select <= STD_LOGIC_VECTOR (unsigned(dest_select) + 1);
+			DData <= STD_LOGIC_VECTOR (DData + DData + DData + DData);
+		end loop;
+		
+		DData <= "0000000000000000";
+		dest_select <= "000";
+		
+		wait for CLK_period*2;
+		DData <= "0000000000000000";
+		dest_select <= "001";
+		
+		wait for CLK_period*2;
+		Asel <= "000";
+		Bsel <= "000";
+		
+		wait for CLK_period*2;
+		Asel <= "000";
+		Bsel <= "000";
+		
+		wait for CLK_period*2;
+		Asel <= "000";
+		Bsel <= "000";
+		
 
       wait;
    end process;
 
 END;
+
