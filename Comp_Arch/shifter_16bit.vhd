@@ -129,7 +129,7 @@ begin
 		s1 => sel1,
 		s2 => sel2,
 		s3 => sel3,
-		z => y(2)
+		z => y(3)
 	);
 	
 	mux4: mux16_1bit port map (

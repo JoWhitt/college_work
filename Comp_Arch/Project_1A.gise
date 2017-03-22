@@ -30,11 +30,15 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="arithmetic_logic_unit_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="arithmetic_logic_unit_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="datapath_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="datapath_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="datapath_tb_isim_beh.wdb"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="decoder_3to8_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="decoder_3to8_tb_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="full_adder_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="full_adder_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="function_unit_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="function_unit_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
@@ -42,9 +46,7 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="multiplexer_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="multiplexer_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="multiplexer_tb_isim_beh.wdb"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mux16_1bit_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="mux16_1bit_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="mux16_1bit_tb_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mux16_1bit_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mux2_16bit_tb_beh.prj"/>
     <file xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="mux2_16bit_tb_isim_beh.exe"/>
@@ -109,17 +111,20 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1490131331" xil_pn:in_ck="-4212432188755439652" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1490131331">
+    <transform xil_pn:end_ts="1490193387" xil_pn:in_ck="8206463045757885353" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1490193387">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ALU_tb.vhd"/>
       <outfile xil_pn:name="Register.vhd"/>
       <outfile xil_pn:name="arithmetic_logic_unit.vhd"/>
+      <outfile xil_pn:name="datapath.vhd"/>
+      <outfile xil_pn:name="datapath_tb.vhd"/>
       <outfile xil_pn:name="decoder_3to8.vhd"/>
       <outfile xil_pn:name="decoder_3to8_tb.vhd"/>
       <outfile xil_pn:name="full_adder.vhd"/>
       <outfile xil_pn:name="full_adder_tb.vhd"/>
       <outfile xil_pn:name="function_unit.vhd"/>
+      <outfile xil_pn:name="function_unit_tb.vhd"/>
       <outfile xil_pn:name="mux16_1bit.vhd"/>
       <outfile xil_pn:name="mux16_1bit_tb.vhd"/>
       <outfile xil_pn:name="mux2_16bit.vhd"/>
@@ -135,29 +140,32 @@
       <outfile xil_pn:name="zero_detect_16.vhd"/>
       <outfile xil_pn:name="zero_detect_tb.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1490131335" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-7090568434449784485" xil_pn:start_ts="1490131335">
+    <transform xil_pn:end_ts="1490190574" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="690090893474820882" xil_pn:start_ts="1490190574">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1490131335" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-7418126459119387517" xil_pn:start_ts="1490131335">
+    <transform xil_pn:end_ts="1490190574" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-301235901351026406" xil_pn:start_ts="1490190574">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1489848711" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="6405147271257014651" xil_pn:start_ts="1489848711">
+    <transform xil_pn:end_ts="1490187878" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-8592598780308496873" xil_pn:start_ts="1490187878">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1490131335" xil_pn:in_ck="-4212432188755439652" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1490131335">
+    <transform xil_pn:end_ts="1490193387" xil_pn:in_ck="8206463045757885353" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1490193387">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ALU_tb.vhd"/>
       <outfile xil_pn:name="Register.vhd"/>
       <outfile xil_pn:name="arithmetic_logic_unit.vhd"/>
+      <outfile xil_pn:name="datapath.vhd"/>
+      <outfile xil_pn:name="datapath_tb.vhd"/>
       <outfile xil_pn:name="decoder_3to8.vhd"/>
       <outfile xil_pn:name="decoder_3to8_tb.vhd"/>
       <outfile xil_pn:name="full_adder.vhd"/>
       <outfile xil_pn:name="full_adder_tb.vhd"/>
       <outfile xil_pn:name="function_unit.vhd"/>
+      <outfile xil_pn:name="function_unit_tb.vhd"/>
       <outfile xil_pn:name="mux16_1bit.vhd"/>
       <outfile xil_pn:name="mux16_1bit_tb.vhd"/>
       <outfile xil_pn:name="mux2_16bit.vhd"/>
@@ -173,29 +181,29 @@
       <outfile xil_pn:name="zero_detect_16.vhd"/>
       <outfile xil_pn:name="zero_detect_tb.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1490131545" xil_pn:in_ck="-4212432188755439652" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-766118207909312172" xil_pn:start_ts="1490131543">
+    <transform xil_pn:end_ts="1490193391" xil_pn:in_ck="8206463045757885353" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8826683470845411966" xil_pn:start_ts="1490193387">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="datapath_tb_beh.prj"/>
+      <outfile xil_pn:name="datapath_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="mux16_1bit_tb_beh.prj"/>
-      <outfile xil_pn:name="mux16_1bit_tb_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1490131545" xil_pn:in_ck="-1156037117270576772" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6073563902149792642" xil_pn:start_ts="1490131545">
+    <transform xil_pn:end_ts="1490193391" xil_pn:in_ck="8886089812373104080" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="7978909591984188304" xil_pn:start_ts="1490193391">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="datapath_tb_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="mux16_1bit_tb_isim_beh.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1487072354" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1487072354">
       <status xil_pn:value="SuccessfullyRun"/>

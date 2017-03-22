@@ -34,8 +34,6 @@ END register_file_v2_tb;
  
 ARCHITECTURE behavior OF register_file_v2_tb IS 
  
-    -- Component Declaration for the Unit Under Test (UUT)
- 
     COMPONENT register_file_v2
     PORT(  load_enable, CLK : in  STD_LOGIC;
            dest_select, Asel, Bsel : in  STD_LOGIC_VECTOR(2 downto 0);
@@ -43,14 +41,12 @@ ARCHITECTURE behavior OF register_file_v2_tb IS
            AData, BData : out  STD_LOGIC_VECTOR (15 downto 0));
     END COMPONENT;
     
-
    --Inputs
    signal load_enable: std_logic := '0';
 	signal CLK: std_logic:= '0';
    signal dest_select: std_logic_vector(2 downto 0) := (others => '0');
    signal Asel, Bsel: std_logic_vector(2 downto 0) := (others => '0');
    signal DData: std_logic_vector(15 downto 0) := (others => '0');
-
  	--Outputs
    signal AData, BData : std_logic_vector(15 downto 0);
 	
@@ -58,8 +54,6 @@ ARCHITECTURE behavior OF register_file_v2_tb IS
    constant CLK_period: time := 10 ns;
  
 BEGIN
- 
-	-- Instantiate the Unit Under Test (UUT)
    uut: register_file_v2 PORT MAP (
           load_enable => load_enable,
 			 CLK => CLK,
@@ -71,7 +65,6 @@ BEGIN
           BData => BData
         );
 
-   -- Clock process definitions
    CLK_process :process
    begin
 		CLK <= '0';
@@ -80,8 +73,6 @@ BEGIN
 		wait for CLK_period/2;
    end process;
  
-
-   -- Stimulus process
    stim_proc: process
    begin		
 	

@@ -30,9 +30,9 @@ end function_unit;
 architecture Behavioral of function_unit is
 -- COMPONENTS
 	component shifter_16bit is
-		Port(	input: in STD_LOGIC(15 to 0);
+		Port( input: in STD_LOGIC_VECTOR(15 downto 0);
 				sel0,sel1,sel2,sel3 : in  STD_LOGIC;
-				y: out STD_LOGIC(15 to 0));
+				y: out STD_LOGIC_VECTOR(15 downto 0) );
 	end component;
 	
 	component zero_detect_16 is
@@ -47,17 +47,17 @@ architecture Behavioral of function_unit is
 	end component;
 	
 	component arithmetic_logic_unit is
-		 Port ( busA, busB : in  STD_LOGIC_VECTOR (15 downto 0);
-				  G_sel : in  STD_LOGIC_VECTOR (4 downto 0);
-				  V, C : out  STD_LOGIC;
-				  G : out  STD_LOGIC_VECTOR (15 downto 0));
+		 Port ( dataA, dataB : in  STD_LOGIC_VECTOR (15 downto 0);
+				  FS_code : in  STD_LOGIC_VECTOR (4 downto 0);
+				  V, C_out : out  STD_LOGIC;
+				  dataG : out  STD_LOGIC_VECTOR (15 downto 0));
 	end component;
 	
 --	SIGNALS
-	signal ALU_out, shifter_out: STD_LOGIC_VECTOR (15 downto 0);
-
+	signal ALU_out, shifter_out, output: STD_LOGIC_VECTOR (15 downto 0);
+	signal shifter_sel: STD_LOGIC_VECTOR (3 downto 0);
 begin
---PORT DECLARATIONS
+
 	ALU: arithmetic_logic_unit port map (
 		dataA => busA, 
 		dataB => busB,
@@ -67,12 +67,16 @@ begin
 		dataG => ALU_out
 	);
 			  
+	shifter_sel <= "0001" when FSel="10100" else
+						"1111" when FSel="11000" else
+						"0000";
+	
 	shifter: shifter_16bit port map (
 		input => busB,
-		sel0 => FSel(0), --TODO: confirm
-		sel1 => FSel(1),
-		sel2 => FSel(2),
-		sel3 => FSel(3),
+		sel0 => shifter_sel(0),
+		sel1 => shifter_sel(1),
+		sel2 => shifter_sel(2),
+		sel3 => shifter_sel(3),
 		y => shifter_out
 	);
 	
@@ -82,11 +86,14 @@ begin
 	);
 	
 	muxF: mux2_16bit port map (
-		S => FSel(4),	--TODO: confirm
+		S => FSel(4),
 		In0 => ALU_out,
 		In1 => shifter_out,
-		Z => F
+		Z => output
 	);
+	
+	N <= output(15);
+	F <= output;
 
 end Behavioral;
 
