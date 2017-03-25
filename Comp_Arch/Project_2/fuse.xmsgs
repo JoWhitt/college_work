@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 39: &lt;<arg fmt="%s" index="1">mux16_1bit</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 63: &lt;<arg fmt="%s" index="1">mux16_1bit</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 87: &lt;<arg fmt="%s" index="1">mux16_1bit</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 111: &lt;<arg fmt="%s" index="1">mux16_1bit</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 135: &lt;<arg fmt="%s" index="1">mux16_1bit</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 159: &lt;<arg fmt="%s" index="1">mux16_1bit</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 183: &lt;<arg fmt="%s" index="1">mux16_1bit</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 207: &lt;<arg fmt="%s" index="1">mux16_1bit</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 231: &lt;<arg fmt="%s" index="1">mux16_1bit</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 255: &lt;<arg fmt="%s" index="1">mux16_1bit</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 279: &lt;<arg fmt="%s" index="1">mux16_1bit</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 303: &lt;<arg fmt="%s" index="1">mux16_1bit</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 327: &lt;<arg fmt="%s" index="1">mux16_1bit</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 350: &lt;<arg fmt="%s" index="1">mux16_1bit</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 374: &lt;<arg fmt="%s" index="1">mux16_1bit</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 398: &lt;<arg fmt="%s" index="1">mux16_1bit</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd</arg>&quot; Line <arg fmt="%d" index="2">39</arg>. Instance <arg fmt="%s" index="3">mux16_1bit</arg> is unbound
+</msg>
+
+<msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd</arg>&quot; Line <arg fmt="%d" index="2">63</arg>. Instance <arg fmt="%s" index="3">mux16_1bit</arg> is unbound
+</msg>
+
+<msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd</arg>&quot; Line <arg fmt="%d" index="2">87</arg>. Instance <arg fmt="%s" index="3">mux16_1bit</arg> is unbound
+</msg>
+
+<msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd</arg>&quot; Line <arg fmt="%d" index="2">111</arg>. Instance <arg fmt="%s" index="3">mux16_1bit</arg> is unbound
+</msg>
+
+<msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd</arg>&quot; Line <arg fmt="%d" index="2">135</arg>. Instance <arg fmt="%s" index="3">mux16_1bit</arg> is unbound
+</msg>
+
+<msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd</arg>&quot; Line <arg fmt="%d" index="2">159</arg>. Instance <arg fmt="%s" index="3">mux16_1bit</arg> is unbound
+</msg>
+
+<msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd</arg>&quot; Line <arg fmt="%d" index="2">183</arg>. Instance <arg fmt="%s" index="3">mux16_1bit</arg> is unbound
+</msg>
+
+<msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd</arg>&quot; Line <arg fmt="%d" index="2">207</arg>. Instance <arg fmt="%s" index="3">mux16_1bit</arg> is unbound
+</msg>
+
+<msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd</arg>&quot; Line <arg fmt="%d" index="2">231</arg>. Instance <arg fmt="%s" index="3">mux16_1bit</arg> is unbound
+</msg>
+
+<msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd</arg>&quot; Line <arg fmt="%d" index="2">255</arg>. Instance <arg fmt="%s" index="3">mux16_1bit</arg> is unbound
+</msg>
+
+<msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd</arg>&quot; Line <arg fmt="%d" index="2">279</arg>. Instance <arg fmt="%s" index="3">mux16_1bit</arg> is unbound
+</msg>
+
+<msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd</arg>&quot; Line <arg fmt="%d" index="2">303</arg>. Instance <arg fmt="%s" index="3">mux16_1bit</arg> is unbound
+</msg>
+
+<msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd</arg>&quot; Line <arg fmt="%d" index="2">327</arg>. Instance <arg fmt="%s" index="3">mux16_1bit</arg> is unbound
+</msg>
+
+<msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd</arg>&quot; Line <arg fmt="%d" index="2">350</arg>. Instance <arg fmt="%s" index="3">mux16_1bit</arg> is unbound
+</msg>
+
+<msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd</arg>&quot; Line <arg fmt="%d" index="2">374</arg>. Instance <arg fmt="%s" index="3">mux16_1bit</arg> is unbound
+</msg>
+
+<msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd</arg>&quot; Line <arg fmt="%d" index="2">398</arg>. Instance <arg fmt="%s" index="3">mux16_1bit</arg> is unbound
+</msg>
+
+</messages>
+
