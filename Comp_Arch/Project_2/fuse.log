@@ -1,0 +1,52 @@
+Running: C:\Xilinx\13.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit_tb_isim_beh.exe -prj U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit_tb_beh.prj work.shifter_16bit_tb 
+ISim O.61xd (signature 0x1cce1bb2)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" into library work
+Parsing VHDL file "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit_tb.vhd" into library work
+Starting static elaboration
+WARNING:HDLCompiler:89 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 39: <mux16_1bit> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 63: <mux16_1bit> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 87: <mux16_1bit> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 111: <mux16_1bit> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 135: <mux16_1bit> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 159: <mux16_1bit> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 183: <mux16_1bit> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 207: <mux16_1bit> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 231: <mux16_1bit> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 255: <mux16_1bit> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 279: <mux16_1bit> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 303: <mux16_1bit> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 327: <mux16_1bit> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 350: <mux16_1bit> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 374: <mux16_1bit> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 398: <mux16_1bit> remains a black-box since it has no binding entity.
+Completed static elaboration
+WARNING:Simulator:648 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 39. Instance mux16_1bit is unbound
+WARNING:Simulator:648 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 63. Instance mux16_1bit is unbound
+WARNING:Simulator:648 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 87. Instance mux16_1bit is unbound
+WARNING:Simulator:648 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 111. Instance mux16_1bit is unbound
+WARNING:Simulator:648 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 135. Instance mux16_1bit is unbound
+WARNING:Simulator:648 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 159. Instance mux16_1bit is unbound
+WARNING:Simulator:648 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 183. Instance mux16_1bit is unbound
+WARNING:Simulator:648 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 207. Instance mux16_1bit is unbound
+WARNING:Simulator:648 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 231. Instance mux16_1bit is unbound
+WARNING:Simulator:648 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 255. Instance mux16_1bit is unbound
+WARNING:Simulator:648 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 279. Instance mux16_1bit is unbound
+WARNING:Simulator:648 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 303. Instance mux16_1bit is unbound
+WARNING:Simulator:648 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 327. Instance mux16_1bit is unbound
+WARNING:Simulator:648 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 350. Instance mux16_1bit is unbound
+WARNING:Simulator:648 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 374. Instance mux16_1bit is unbound
+WARNING:Simulator:648 - "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 398. Instance mux16_1bit is unbound
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity shifter_16bit [shifter_16bit_default]
+Compiling architecture behavior of entity shifter_16bit_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 6 VHDL Units
+Built simulation executable U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit_tb_isim_beh.exe
+Fuse Memory Usage: 26228 KB
+Fuse CPU Usage: 218 ms

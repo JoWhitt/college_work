@@ -1,41 +1,97 @@
 
-int n_philosophers = 5;
-bit forks[n_philosophers];
+#define max_philosophers 5
 
-int eating_time = 1000000000;
-
+bit forks[max_philosophers] = 0;
+int phils_eating_now[max_philosophers];
+int phils_eating = 0;
 
 proctype philosopher(int id) {
-	lookForForks:
-		do
-		::(forks[id]==0) && (forks[(id+1)%n_philosophers]==0)->
-			forks[id]==1;
-			forks[(id+1)%n_philosophers]==1;
-			goto eat;
-		od;
+	thinkLeft:
+		atomic {
+			do
+			::(forks[id]==0) ->
+				forks[id]=1;
+				phils_eating++;
+				phils_eating_now[id] = 1;
+				goto thinkRight;
+			od;
+		};
+
+	thinkRight:
+		atomic {
+			do
+			::(forks[(id+1)%max_philosophers]==0) ->
+				forks[(id+1)%max_philosophers]=1;
+				goto eat;
+			od;
+		};
 
 	eat:
-		int eating = eating_time;
-		do 
-		::(eating > 0) ->
-			eating--;
-		::else ->
-			goto dropForks;
-		od;
-
-	dropForks:
-		forks[id]==0;
-		forks[(id+1)%n_philosophers]==0;
-		goto lookForForks;
+		atomic {
+			phils_eating--;
+			phils_eating_now[id] = 0;
+		};
+	
+	putDownRight:
+		atomic {
+			forks[id]==0;
+		}
+		
+	putDownLeft:
+		atomic {
+			forks[(id+1)%max_philosophers]=0;
+			goto thinkLeft;
+		}
 }
+
+
+//TABLE SETTINGS------------------------------------------------
+proctype oneAtATable() {
+	run philosopher(0);
+}
+
+proctype twoSittingApart() {
+	run philosopher(0);
+	run philosopher(2);
+}
+
+proctype twoSittingTogether() {
+	run philosopher(1);
+	run philosopher(2);
+}
+
+proctype fourPhilosophers() {
+	atomic {
+		int n_philosophers = 4;
+		int i=0;
+		do
+		::(i < n_philosophers) ->
+			run philosopher(i);
+			i++;
+		::else -> break;
+		od;
+	};
+}
+
+proctype fullTable() {
+	atomic {
+		int n_philosophers = 5;
+		int i=0;
+		do
+		::(i < n_philosophers) ->
+			run philosopher(i);
+			i++;
+		::else -> break;
+		od;
+	};
+}
+
+//--------------------------------------------------------------
 
 init {
-	int i=0;
-	do
-	::(i <= n_philosophers) ->
-		run philosopher(i);
-		i++;
-	od;
+	run fullTable();
 }
 
-#https://github.com/oflynned/DiningPhilosophersPromela/blob/master/lab4.pml
+
+//spin -a dining_philosophers.pml; gcc -Wall pan.c; ./a.out
+//https://github.com/oflynned/DiningPhilosophersPromela/blob/master/lab4.pml

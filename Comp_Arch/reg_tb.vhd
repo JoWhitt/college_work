@@ -28,23 +28,17 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
  
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---USE ieee.numeric_std.ALL;
- 
 ENTITY reg_tb IS
 END reg_tb;
  
 ARCHITECTURE behavior OF reg_tb IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
- 
     COMPONENT reg
     PORT( D: IN  std_logic_vector(15 downto 0);
           load, CLK: IN  std_logic;
           Q: OUT  std_logic_vector(15 downto 0) );
     END COMPONENT;
-    
 
    --Inputs
    signal D: std_logic_vector(15 downto 0) := (others => '0');

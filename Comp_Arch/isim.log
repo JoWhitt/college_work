@@ -1,5 +1,5 @@
 ISim log file
-Running: U:\Comp_Arch\register_file_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb U:/Comp_Arch/register_file_tb_isim_beh.wdb 
+Running: U:\GitHub\college_work\Comp_Arch\datapath_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb U:/GitHub/college_work/Comp_Arch/datapath_tb_isim_beh.wdb 
 ISim O.61xd (signature 0x1cce1bb2)
 ----------------------------------------------------------------------
 INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable is not set.

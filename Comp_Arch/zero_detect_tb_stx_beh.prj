@@ -1,0 +1,2 @@
+vhdl isim_temp "zero_detect_16.vhd"
+vhdl isim_temp "zero_detect_tb.vhd"

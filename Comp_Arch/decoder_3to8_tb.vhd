@@ -36,38 +36,38 @@ ARCHITECTURE behavior OF decoder_3to8_tb IS
     -- Component Declaration for the Unit Under Test (UUT)
     COMPONENT decoder_3to8
     PORT(	A0,A1,A2: in  STD_LOGIC;
-				Q0,Q1,Q2,Q3,Q4,Q5,Q6,Q7: out  STD_LOGIC );
+		Q0,Q1,Q2,Q3,Q4,Q5,Q6,Q7: out  STD_LOGIC );
     END COMPONENT;
     
    --Inputs
-   signal A0: std_logic := '0';
-   signal A1: std_logic := '0';
-   signal A2: std_logic := '0';
+   signal A0 : std_logic := '0';
+   signal A1 : std_logic := '0';
+   signal A2 : std_logic := '0';
 
- 	--Outputs
-   signal Q0,Q1,Q2,Q3,Q4,Q5,Q6,Q7: std_logic;
- 
+--Outputs
+	signal Q0,Q1,Q2,Q3,Q4,Q5,Q6,Q7: std_logic;
+
 BEGIN
 	-- Instantiate the Unit Under Test (UUT)
-   uut: decoder_3to8 PORT MAP (
-          A0 => A0,
-          A1 => A1,
-          A2 => A2,
-          Q0 => Q0,
-          Q1 => Q1,
-          Q2 => Q2,
-          Q3 => Q3,
-          Q4 => Q4,
-          Q5 => Q5,
-          Q6 => Q6,
-          Q7 => Q7
-        );
+   	uut: decoder_3to8 PORT MAP (
+A0 => A0,
+A1 => A1,
+A2 => A2,
+Q0 => Q0,
+Q1 => Q1,
+Q2 => Q2,
+Q3 => Q3,
+Q4 => Q4,
+Q5 => Q5,
+Q6 => Q6,
+Q7 => Q7
+       	 );
 		  
-   -- Stimulus process
-   stim_proc: process
-   begin		
-      -- hold reset state for 100 ns.
-      wait for 10 ns;	
+ -- Stimulus process
+ stim_proc: process
+ begin		
+      	-- hold reset state for 100 ns.
+      	wait for 10 ns;	
 		
 		-- 0
 		A0<='0'; A1<='0'; A2<='0';
@@ -100,5 +100,5 @@ BEGIN
 		-- 7
 		A0<='1'; A1<='1'; A2<='1';
 		wait;
-   end process;
+   	end process;
 END;
