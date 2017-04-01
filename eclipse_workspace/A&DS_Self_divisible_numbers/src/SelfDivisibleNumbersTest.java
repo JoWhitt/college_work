@@ -24,4 +24,16 @@ public class SelfDivisibleNumbersTest {
 	public void correctNumbersTest() {		
 		assertArrayEquals(correctSDN,sdn.SelfDivisibleNumbers.toArray());
 	}
+	
+	@Test
+	public void firstKDigitNumberTest() {		
+		assertEquals("Testing getFirstKDigitNumber on {1,2,3,4,5,6,7,8,9}, 1", 1, 
+				sdn.getFirstKDigitNumber(new int[] {1,2,3,4,5,6,7,8,9}, 1));
+	}
+	
+	@Test
+	public void NumberOfSelfDivisibleNumbersTest() {		
+		assertEquals(1, sdn.getNumberOfSelfDivisibleNumbers());
+	}
+	
 }

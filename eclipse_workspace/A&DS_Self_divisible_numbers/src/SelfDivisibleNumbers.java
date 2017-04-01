@@ -27,12 +27,8 @@ public class SelfDivisibleNumbers {
 	public ArrayList<Integer> SelfDivisibleNumbers;
 	
 	public SelfDivisibleNumbers() {
-		long startTime = System.nanoTime();
 		getSelfDivisibleNumbers();
-		long endTime = System.nanoTime();
-		long timeTaken = (endTime-startTime);
 		
-		System.out.println("Time taken: 0.000"+timeTaken+"s");
 		System.out.println(N_DIGITS+" digit Self divisible numbers:");
 		System.out.println(SelfDivisibleNumbers.toString());
 	}
@@ -114,13 +110,12 @@ public class SelfDivisibleNumbers {
 	 * @return number of 9-digit self divisible numbers
 	 */
 	public int getNumberOfSelfDivisibleNumbers() {
-		// TODO: Implement
-		return -1;
+		return SelfDivisibleNumbers.size();
 	}
 	
-	public static void main(String arg0[]) {
+	/*public static void main(String arg0[]) {
 		SelfDivisibleNumbers SDN = new SelfDivisibleNumbers();
-	}
+	}*/
 }
 
 
