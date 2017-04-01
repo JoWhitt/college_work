@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="&lt;-" key="selection"/>
+		<item value="9" key="selection"/>
 		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="9"/>
 			<item value="&lt;-"/>
 			<item value="//print BOARD_SOLVED_POS"/>
 			<item value="Your move:"/>
@@ -15,7 +16,6 @@
 			<item value="floydPermutations"/>
 			<item value="roof"/>
 			<item value="users"/>
-			<item value="updateE"/>
 		</list>
 		<list key="replacehistory">
 			<item value="//TODO"/>
