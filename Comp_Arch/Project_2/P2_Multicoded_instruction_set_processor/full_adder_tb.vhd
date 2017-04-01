@@ -32,30 +32,23 @@ ENTITY full_adder_tb IS
 END full_adder_tb;
  
 ARCHITECTURE behavior OF full_adder_tb IS 
- 
-    -- Component Declaration for the Unit Under Test (UUT)
     COMPONENT full_adder
-    PORT(
-         A : IN  std_logic;
-         B : IN  std_logic;
-         c_in : IN  std_logic;
-         c_out : OUT  std_logic;
-         Sum : OUT  std_logic
-        );
+    PORT( A : IN  std_logic;
+          B : IN  std_logic;
+          c_in : IN  std_logic;
+          c_out : OUT  std_logic;
+          Sum : OUT  std_logic );
     END COMPONENT;
 
    --Inputs
    signal A : std_logic := '0';
    signal B : std_logic := '0';
    signal c_in : std_logic := '0';
-
  	--Outputs
    signal c_out : std_logic;
    signal Sum : std_logic;
  
 BEGIN
- 
-	-- Instantiate the Unit Under Test (UUT)
    uut: full_adder PORT MAP (
           A => A,
           B => B,
@@ -64,18 +57,15 @@ BEGIN
           Sum => Sum
    );
 
-   -- Stimulus process
    stim_proc: process
-   begin		
-      -- hold reset state for 100 ns.
-      wait for 100 ns;	
-		
+   begin
+		wait for 100 ns;
 		A <= '0';
 		B <= '0';
 		c_in <= '1';
 		
 		--loop through A values
-      for i in 0 to 1 loop
+		for i in 0 to 1 loop
 			--loop through B values
 			for j in 0 to 1 loop
 				--loop through c_in values
@@ -87,8 +77,6 @@ BEGIN
 			end loop;
 			A <= not A;
 		end loop;
-		
-      wait;
+		wait;
    end process;
-
 END;

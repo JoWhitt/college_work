@@ -40,8 +40,7 @@ ARCHITECTURE behavior OF reg_tb IS
 
    --Inputs
    signal D: std_logic_vector(15 downto 0) := (others => '0');
-   signal load: std_logic := '0';
-   signal CLK: std_logic := '0';
+   signal load,CLK: std_logic := '0';
  	--Outputs
    signal Q: std_logic_vector(15 downto 0);
 
@@ -65,32 +64,22 @@ BEGIN
  
    stim_proc: process
    begin	
-      wait for 5 ns;	
-		
-		D <= "0000000000001111";
-		wait for CLK_period;
-		load <= '1';
-		wait for CLK_period;
+		wait for 5 ns;	
+		D <= "0000000000001111"; 	wait for CLK_period;
+		load <= '1'; 				wait for CLK_period;
 		load <= '0';
 		
-		D <= "0000000011110000";
-		wait for CLK_period;
-		load <= '1';
-		wait for CLK_period;
+		D <= "0000000011110000";	wait for CLK_period;
+		load <= '1';				wait for CLK_period;
 		load <= '0';
 		
-		D <= "0000111100000000";
-		wait for CLK_period;
-		load <= '1';
-		wait for CLK_period;
+		D <= "0000111100000000";	wait for CLK_period;
+		load <= '1';				wait for CLK_period;
 		load <= '0';
 		
-		D <= "1111000000000000";
-		wait for CLK_period;
-		load <= '1';
-		wait for CLK_period;
+		D <= "1111000000000000";	wait for CLK_period;
+		load <= '1';				wait for CLK_period;
 		load <= '0';
-      wait;
+		wait;
    end process;
-
 END;

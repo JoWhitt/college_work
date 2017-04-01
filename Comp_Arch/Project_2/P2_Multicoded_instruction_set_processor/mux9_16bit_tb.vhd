@@ -31,7 +31,6 @@ ENTITY mux9_16bit_tb IS
 END mux9_16bit_tb;
  
 ARCHITECTURE behavior OF mux9_16bit_tb IS 
-
     COMPONENT mux9_16bit
     PORT( s0,s1,s2,s3 : IN  std_logic;
           in0,in1,in2,in3,in4,in5,in6,in7,in8 : IN  std_logic_vector(15 downto 0);
@@ -75,27 +74,15 @@ BEGIN
 		in7 <= "1100000000000000";
 		in8 <= "0011001100110011";
 
-		-- 0
-		s0<='0'; s1<='0'; s2<='0';	s3<='0';		wait for 10 ns;
-		-- 1
-		s0<='1'; s1<='0'; s2<='0';	s3<='0';		wait for 10 ns;
-		-- 2
-		s0<='0'; s1<='1'; s2<='0';	s3<='0';		wait for 10 ns;
-		-- 3
-		s0<='1'; s1<='1'; s2<='0';	s3<='0';		wait for 10 ns;
-		-- 4
-		s0<='0'; s1<='0'; s2<='1';	s3<='0';		wait for 10 ns;
-		-- 5
-		s0<='1'; s1<='0'; s2<='1';	s3<='0';		wait for 10 ns;
-		-- 6
+		s0<='0'; s1<='0'; s2<='0'; s3<='0';		wait for 10 ns;
+		s0<='1'; s1<='0'; s2<='0'; s3<='0';		wait for 10 ns;
+		s0<='0'; s1<='1'; s2<='0'; s3<='0';		wait for 10 ns;
+		s0<='1'; s1<='1'; s2<='0'; s3<='0';		wait for 10 ns;
+		s0<='0'; s1<='0'; s2<='1'; s3<='0';		wait for 10 ns;
+		s0<='1'; s1<='0'; s2<='1'; s3<='0';		wait for 10 ns;
 		s0<='0'; s1<='1'; s2<='1'; s3<='0';		wait for 10 ns;
-		-- 7
 		s0<='1'; s1<='1'; s2<='1'; s3<='0';		wait for 10 ns;
-		-- 0
-		s0<='0'; s1<='0'; s2<='0';	s3<='1';		wait;
-
-
-      wait;
+		s0<='0'; s1<='0'; s2<='0'; s3<='1';		wait;
    end process;
 
 END;

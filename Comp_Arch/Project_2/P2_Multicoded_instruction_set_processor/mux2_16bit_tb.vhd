@@ -35,8 +35,7 @@ ARCHITECTURE behavior OF mux2_16bit_tb IS
     COMPONENT mux2_16bit
     PORT(  S: in  STD_LOGIC;
            In0,In1: in  STD_LOGIC_VECTOR (15 downto 0);
-           Z: out  STD_LOGIC_VECTOR (15 downto 0)
-        );
+           Z: out  STD_LOGIC_VECTOR (15 downto 0) );
     END COMPONENT;
    
    --Inputs
@@ -58,8 +57,7 @@ BEGIN
 		In0 <= "0000000000000000";
 		In1 <= "1111111111111111";	
 		
-      S <= '0';	wait for 100 ns;	
+		S <= '0';	wait for 100 ns;	
 		S <= '1';	wait;		
    end process;
-
 END;

@@ -21,36 +21,36 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity function_unit is
-    Port ( busA, busB : in  STD_LOGIC_VECTOR (15 downto 0);
+    Port ( busA,busB : in  STD_LOGIC_VECTOR (15 downto 0);
            FSel : in  STD_LOGIC_VECTOR (4 downto 0);
-           V, C, N, Z : out  STD_LOGIC;
+           V,C,N,Z : out  STD_LOGIC;
            F : out  STD_LOGIC_VECTOR (15 downto 0));
 end function_unit;
 
 architecture Behavioral of function_unit is
 -- COMPONENTS
 	component shifter_16bit is
-		Port( input: in STD_LOGIC_VECTOR(15 downto 0);
-				sel0,sel1,sel2,sel3 : in  STD_LOGIC;
-				y: out STD_LOGIC_VECTOR(15 downto 0) );
+	Port( 	input: in STD_LOGIC_VECTOR(15 downto 0);
+			sel0,sel1,sel2,sel3 : in  STD_LOGIC;
+			y: out STD_LOGIC_VECTOR(15 downto 0) );
 	end component;
 	
 	component zero_detect_16 is
-		 Port ( data : in  STD_LOGIC_VECTOR (15 downto 0);
-				  z : out  STD_LOGIC);
+	Port ( 	data : in  STD_LOGIC_VECTOR (15 downto 0);
+			z : out  STD_LOGIC);
 	end component;
 	
 	component mux2_16bit is
-		 Port ( S: in  STD_LOGIC;
-				  In0, In1: in  STD_LOGIC_VECTOR (15 downto 0);
-				  Z: out  STD_LOGIC_VECTOR (15 downto 0));
+	Port ( 	S: in  STD_LOGIC;
+			In0, In1: in  STD_LOGIC_VECTOR (15 downto 0);
+			Z: out  STD_LOGIC_VECTOR (15 downto 0));
 	end component;
 	
 	component arithmetic_logic_unit is
-		 Port ( dataA, dataB : in  STD_LOGIC_VECTOR (15 downto 0);
-				  FS_code : in  STD_LOGIC_VECTOR (4 downto 0);
-				  V, C_out : out  STD_LOGIC;
-				  dataG : out  STD_LOGIC_VECTOR (15 downto 0));
+	Port ( 	dataA, dataB : in  STD_LOGIC_VECTOR (15 downto 0);
+			FS_code : in  STD_LOGIC_VECTOR (4 downto 0);
+			V, C_out : out  STD_LOGIC;
+			dataG : out  STD_LOGIC_VECTOR (15 downto 0));
 	end component;
 	
 --	SIGNALS
@@ -67,9 +67,9 @@ begin
 		dataG => ALU_out
 	);
 			  
-	shifter_sel <= "0001" when FSel="10100" else
-						"1111" when FSel="11000" else
-						"0000";
+	shifter_sel <= 	"0001" when FSel="10100" else
+					"1111" when FSel="11000" else
+					"0000";
 	
 	shifter: shifter_16bit port map (
 		input => busB,
@@ -94,6 +94,5 @@ begin
 	
 	N <= output(15);
 	F <= output;
-
 end Behavioral;
 

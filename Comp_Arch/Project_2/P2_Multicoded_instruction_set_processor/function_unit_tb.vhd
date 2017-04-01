@@ -34,17 +34,17 @@ END function_unit_tb;
 ARCHITECTURE behavior OF function_unit_tb IS 
  
     COMPONENT function_unit
-    PORT ( busA, busB : in  STD_LOGIC_VECTOR (15 downto 0);
+    PORT ( busA,busB : in  STD_LOGIC_VECTOR (15 downto 0);
            FSel : in  STD_LOGIC_VECTOR (4 downto 0);
-           V, C, N, Z : out  STD_LOGIC;
+           V,C,N,Z : out  STD_LOGIC;
            F : out  STD_LOGIC_VECTOR (15 downto 0));
     END COMPONENT;
     
    --Inputs
-   signal busA, busB : std_logic_vector(15 downto 0) := (others => '0');
+   signal busA,busB : std_logic_vector(15 downto 0) := (others => '0');
    signal FSel : std_logic_vector(4 downto 0) := (others => '0');
  	--Outputs
-   signal V, C, N, Z : std_logic;
+   signal V,C,N,Z : std_logic;
    signal F : std_logic_vector(15 downto 0);
  
 BEGIN
@@ -67,8 +67,8 @@ BEGIN
 		busA <= "0000111100000000";
 		busB <= "0000000011110000";
 		wait for 10 ns;	FSel <= "00000";
-		wait for 10 ns; 	FSel <= "00001";
-		wait for 10 ns; 	FSel <= "00010";
+		wait for 10 ns; FSel <= "00001";
+		wait for 10 ns;	FSel <= "00010";
 		wait for 10 ns;	FSel <= "00011";
 		wait for 10 ns;	FSel <= "00100";
 		wait for 10 ns;	FSel <= "00101";
@@ -78,18 +78,16 @@ BEGIN
 		--Test logical functions
 		busA <= "0000111100001111";
 		busB <= "0000000011111111";
-		wait for 10 ns; 	FSel <= "01000";
-		wait for 10 ns; 	FSel <= "01010";
-		wait for 10 ns; 	FSel <= "01100";
-		wait for 10 ns; 	FSel <= "01110"; 
+		wait for 10 ns; FSel <= "01000";
+		wait for 10 ns; FSel <= "01010";
+		wait for 10 ns; FSel <= "01100";
+		wait for 10 ns; FSel <= "01110"; 
 		
 		--Test shifter 
 		busB <= "0000000000000011";
-		wait for 10 ns; 	FSel <= "10000";
-		wait for 10 ns; 	FSel <= "10100";
-		wait for 10 ns; 	FSel <= "11000";
-
-      wait;
+		wait for 10 ns; FSel <= "10000";
+		wait for 10 ns; FSel <= "10100";
+		wait for 10 ns; FSel <= "11000";
+		wait;
    end process;
-
 END;

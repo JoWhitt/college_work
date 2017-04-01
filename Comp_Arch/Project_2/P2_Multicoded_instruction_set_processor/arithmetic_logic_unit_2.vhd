@@ -51,9 +51,9 @@ begin
 	);
 
 	c_signal <= FS_code(0);
-	rippleDataB <= (dataB) when FS_code(2 downto 1)="01" else
-						(not dataB) when FS_code(2 downto 1)="10" else 
-						"1111111111111110" when FS_code(2 downto 1)="11" else 
-						"0000000000000000";
+	rippleDataB <= 	(dataB) when FS_code(2 downto 1)="01" else
+					(not dataB) when FS_code(2 downto 1)="10" else 
+					"1111111111111110" when FS_code(2 downto 1)="11" else 
+					"0000000000000000";
 end Behavioral;
 

@@ -21,9 +21,9 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity reg is
-    Port ( D: in STD_LOGIC_VECTOR (15 downto 0);
-           load, CLK: in STD_LOGIC;
-           Q: out STD_LOGIC_VECTOR (15 downto 0) );
+Port ( D: in STD_LOGIC_VECTOR (15 downto 0);
+	   load, CLK: in STD_LOGIC;
+	   Q: out STD_LOGIC_VECTOR (15 downto 0) );
 end reg;
 
 architecture Behavioral of reg is

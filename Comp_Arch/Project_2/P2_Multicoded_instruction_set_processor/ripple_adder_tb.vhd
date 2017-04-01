@@ -32,8 +32,6 @@ ENTITY ripple_adder_tb IS
 END ripple_adder_tb;
  
 ARCHITECTURE behavior OF ripple_adder_tb IS 
- 
-   --Component Declaration for the Unit Under Test (UUT)
    COMPONENT ripple_adder_16bit
 		 PORT ( Ain, Bin : in  STD_LOGIC_VECTOR (15 downto 0);
 				  C_in : in  STD_LOGIC;
