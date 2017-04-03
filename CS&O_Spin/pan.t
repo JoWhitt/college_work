@@ -28,108 +28,122 @@ settable(void)
 
 	trans[6] = (Trans **) emalloc(3*sizeof(Trans *));
 
-	trans[6][1]	= settr(53,0,2,3,3,"(run fullTable())", 0, 2, 0);
-	trans[6][2]	= settr(54,0,0,4,4,"-end-", 0, 3500, 0);
+	trans[6][1]	= settr(62,0,2,3,3,"(run fourPhilosophers())", 0, 2, 0);
+	trans[6][2]	= settr(63,0,0,4,4,"-end-", 0, 3500, 0);
 
 	/* proctype 5: fullTable */
 
 	trans[5] = (Trans **) emalloc(11*sizeof(Trans *));
 
-	T = trans[ 5][9] = settr(51,2,0,0,0,"ATOMIC", 0, 2, 0);
-	T->nxt	= settr(51,2,6,0,0,"ATOMIC", 0, 2, 0);
-	trans[5][7]	= settr(49,2,6,1,0,".(goto)", 0, 2, 0);
-	T = trans[5][6] = settr(48,2,0,0,0,"DO", 0, 2, 0);
-	T = T->nxt	= settr(48,2,1,0,0,"DO", 0, 2, 0);
-	    T->nxt	= settr(48,2,4,0,0,"DO", 0, 2, 0);
-	trans[5][1]	= settr(43,2,2,5,0,"((i<n_philosophers))", 0, 2, 0);
-	trans[5][2]	= settr(44,2,3,6,6,"(run philosopher(i))", 0, 2, 0);
-	trans[5][3]	= settr(45,2,6,7,7,"i = (i+1)", 0, 2, 0);
-	trans[5][4]	= settr(46,2,5,2,0,"else", 0, 2, 0);
-	trans[5][5]	= settr(47,2,8,1,0,"goto :b3", 0, 2, 0);
-	trans[5][8]	= settr(50,0,10,1,0,"break", 0, 2, 0);
-	trans[5][10]	= settr(52,0,0,8,8,"-end-", 0, 3500, 0);
+	T = trans[ 5][9] = settr(60,2,0,0,0,"ATOMIC", 0, 2, 0);
+	T->nxt	= settr(60,2,6,0,0,"ATOMIC", 0, 2, 0);
+	trans[5][7]	= settr(58,2,6,1,0,".(goto)", 0, 2, 0);
+	T = trans[5][6] = settr(57,2,0,0,0,"DO", 0, 2, 0);
+	T = T->nxt	= settr(57,2,1,0,0,"DO", 0, 2, 0);
+	    T->nxt	= settr(57,2,4,0,0,"DO", 0, 2, 0);
+	trans[5][1]	= settr(52,2,2,5,0,"((i<n_philosophers))", 0, 2, 0);
+	trans[5][2]	= settr(53,2,3,6,6,"(run philosopher(i))", 0, 2, 0);
+	trans[5][3]	= settr(54,2,6,7,7,"i = (i+1)", 0, 2, 0);
+	trans[5][4]	= settr(55,2,5,2,0,"else", 0, 2, 0);
+	trans[5][5]	= settr(56,2,8,1,0,"goto :b3", 0, 2, 0);
+	trans[5][8]	= settr(59,0,10,1,0,"break", 0, 2, 0);
+	trans[5][10]	= settr(61,0,0,8,8,"-end-", 0, 3500, 0);
 
 	/* proctype 4: fourPhilosophers */
 
 	trans[4] = (Trans **) emalloc(11*sizeof(Trans *));
 
-	T = trans[ 4][9] = settr(41,2,0,0,0,"ATOMIC", 0, 2, 0);
-	T->nxt	= settr(41,2,6,0,0,"ATOMIC", 0, 2, 0);
-	trans[4][7]	= settr(39,2,6,1,0,".(goto)", 0, 2, 0);
-	T = trans[4][6] = settr(38,2,0,0,0,"DO", 0, 2, 0);
-	T = T->nxt	= settr(38,2,1,0,0,"DO", 0, 2, 0);
-	    T->nxt	= settr(38,2,4,0,0,"DO", 0, 2, 0);
-	trans[4][1]	= settr(33,2,2,9,0,"((i<n_philosophers))", 0, 2, 0);
-	trans[4][2]	= settr(34,2,3,10,10,"(run philosopher(i))", 0, 2, 0);
-	trans[4][3]	= settr(35,2,6,11,11,"i = (i+1)", 0, 2, 0);
-	trans[4][4]	= settr(36,2,5,2,0,"else", 0, 2, 0);
-	trans[4][5]	= settr(37,2,8,1,0,"goto :b2", 0, 2, 0);
-	trans[4][8]	= settr(40,0,10,1,0,"break", 0, 2, 0);
-	trans[4][10]	= settr(42,0,0,12,12,"-end-", 0, 3500, 0);
+	T = trans[ 4][9] = settr(50,2,0,0,0,"ATOMIC", 0, 2, 0);
+	T->nxt	= settr(50,2,6,0,0,"ATOMIC", 0, 2, 0);
+	trans[4][7]	= settr(48,2,6,1,0,".(goto)", 0, 2, 0);
+	T = trans[4][6] = settr(47,2,0,0,0,"DO", 0, 2, 0);
+	T = T->nxt	= settr(47,2,1,0,0,"DO", 0, 2, 0);
+	    T->nxt	= settr(47,2,4,0,0,"DO", 0, 2, 0);
+	trans[4][1]	= settr(42,2,2,9,0,"((i<n_philosophers))", 0, 2, 0);
+	trans[4][2]	= settr(43,2,3,10,10,"(run philosopher(i))", 0, 2, 0);
+	trans[4][3]	= settr(44,2,6,11,11,"i = (i+1)", 0, 2, 0);
+	trans[4][4]	= settr(45,2,5,2,0,"else", 0, 2, 0);
+	trans[4][5]	= settr(46,2,8,1,0,"goto :b2", 0, 2, 0);
+	trans[4][8]	= settr(49,0,10,1,0,"break", 0, 2, 0);
+	trans[4][10]	= settr(51,0,0,12,12,"-end-", 0, 3500, 0);
 
 	/* proctype 3: twoSittingTogether */
 
 	trans[3] = (Trans **) emalloc(4*sizeof(Trans *));
 
-	trans[3][1]	= settr(30,0,2,13,13,"(run philosopher(1))", 0, 2, 0);
-	trans[3][2]	= settr(31,0,3,14,14,"(run philosopher(2))", 0, 2, 0);
-	trans[3][3]	= settr(32,0,0,15,15,"-end-", 0, 3500, 0);
+	trans[3][1]	= settr(39,0,2,13,13,"(run philosopher(1))", 0, 2, 0);
+	trans[3][2]	= settr(40,0,3,14,14,"(run philosopher(2))", 0, 2, 0);
+	trans[3][3]	= settr(41,0,0,15,15,"-end-", 0, 3500, 0);
 
 	/* proctype 2: twoSittingApart */
 
 	trans[2] = (Trans **) emalloc(4*sizeof(Trans *));
 
-	trans[2][1]	= settr(27,0,2,16,16,"(run philosopher(0))", 0, 2, 0);
-	trans[2][2]	= settr(28,0,3,17,17,"(run philosopher(2))", 0, 2, 0);
-	trans[2][3]	= settr(29,0,0,18,18,"-end-", 0, 3500, 0);
+	trans[2][1]	= settr(36,0,2,16,16,"(run philosopher(0))", 0, 2, 0);
+	trans[2][2]	= settr(37,0,3,17,17,"(run philosopher(2))", 0, 2, 0);
+	trans[2][3]	= settr(38,0,0,18,18,"-end-", 0, 3500, 0);
 
 	/* proctype 1: oneAtATable */
 
 	trans[1] = (Trans **) emalloc(3*sizeof(Trans *));
 
-	trans[1][1]	= settr(25,0,2,19,19,"(run philosopher(0))", 0, 2, 0);
-	trans[1][2]	= settr(26,0,0,20,20,"-end-", 0, 3500, 0);
+	trans[1][1]	= settr(34,0,2,19,19,"(run philosopher(0))", 0, 2, 0);
+	trans[1][2]	= settr(35,0,0,20,20,"-end-", 0, 3500, 0);
 
 	/* proctype 0: philosopher */
 
-	trans[0] = (Trans **) emalloc(26*sizeof(Trans *));
+	trans[0] = (Trans **) emalloc(35*sizeof(Trans *));
 
-	T = trans[ 0][9] = settr(8,2,0,0,0,"ATOMIC", 1, 2, 0);
-	T->nxt	= settr(8,2,6,0,0,"ATOMIC", 1, 2, 0);
-	trans[0][7]	= settr(6,2,6,1,0,".(goto)", 1, 2, 0);
-	T = trans[0][6] = settr(5,2,0,0,0,"DO", 1, 2, 0);
-	    T->nxt	= settr(5,2,1,0,0,"DO", 1, 2, 0);
-	trans[0][1]	= settr(0,4,16,21,21,"((forks[id]==0))", 1, 2, 0); /* m: 2 -> 16,0 */
-	reached0[2] = 1;
-	trans[0][2]	= settr(0,0,0,0,0,"forks[id] = 1",0,0,0);
-	trans[0][3]	= settr(0,0,0,0,0,"phils_eating = (phils_eating+1)",0,0,0);
-	trans[0][4]	= settr(0,0,0,0,0,"phils_eating_now[id] = 1",0,0,0);
-	trans[0][5]	= settr(4,0,16,1,0,"goto thinkRight", 1, 2, 0);
-	trans[0][8]	= settr(7,0,16,1,0,"break", 1, 2, 0);
-	T = trans[ 0][16] = settr(15,2,0,0,0,"ATOMIC", 1, 2, 0);
-	T->nxt	= settr(15,2,13,0,0,"ATOMIC", 1, 2, 0);
-	trans[0][14]	= settr(13,2,13,1,0,".(goto)", 1, 2, 0);
-	T = trans[0][13] = settr(12,2,0,0,0,"DO", 1, 2, 0);
-	    T->nxt	= settr(12,2,10,0,0,"DO", 1, 2, 0);
-	trans[0][10]	= settr(9,4,19,22,22,"((forks[((id+1)%5)]==0))", 1, 2, 0); /* m: 11 -> 19,0 */
-	reached0[11] = 1;
-	trans[0][11]	= settr(0,0,0,0,0,"forks[((id+1)%5)] = 1",0,0,0);
-	trans[0][12]	= settr(11,0,19,1,0,"goto eat", 1, 2, 0);
-	trans[0][15]	= settr(14,0,19,1,0,"break", 1, 2, 0);
-	T = trans[ 0][19] = settr(18,2,0,0,0,"ATOMIC", 1, 2, 0);
-	T->nxt	= settr(18,2,17,0,0,"ATOMIC", 1, 2, 0);
-	trans[0][17]	= settr(16,4,21,23,23,"phils_eating = (phils_eating-1)", 1, 2, 0); /* m: 18 -> 0,21 */
-	reached0[18] = 1;
-	trans[0][18]	= settr(0,0,0,0,0,"phils_eating_now[id] = 0",0,0,0);
-	T = trans[ 0][21] = settr(20,2,0,0,0,"ATOMIC", 1, 2, 0);
-	T->nxt	= settr(20,2,20,0,0,"ATOMIC", 1, 2, 0);
-	trans[0][20]	= settr(19,0,24,24,0,"((forks[id]==0))", 1, 2, 0);
-	T = trans[ 0][24] = settr(23,2,0,0,0,"ATOMIC", 1, 2, 0);
-	T->nxt	= settr(23,2,22,0,0,"ATOMIC", 1, 2, 0);
-	trans[0][22]	= settr(21,4,9,25,25,"forks[((id+1)%5)] = 0", 1, 2, 0); /* m: 23 -> 0,9 */
-	reached0[23] = 1;
-	trans[0][23]	= settr(22,0,9,1,0,"goto thinkLeft", 1, 2, 0);
-	trans[0][25]	= settr(0,0,0,0,0,"-end-",0,0,0);
+	T = trans[ 0][12] = settr(11,2,0,0,0,"ATOMIC", 1, 2, 0);
+	T->nxt	= settr(11,2,1,0,0,"ATOMIC", 1, 2, 0);
+	trans[0][1]	= settr(0,2,9,21,21,"timeToStarvation[id] = 1000", 1, 2, 0);
+	trans[0][10]	= settr(9,2,9,1,0,".(goto)", 1, 2, 0);
+	T = trans[0][9] = settr(8,2,0,0,0,"DO", 1, 2, 0);
+	T = T->nxt	= settr(8,2,2,0,0,"DO", 1, 2, 0);
+	T = T->nxt	= settr(8,2,5,0,0,"DO", 1, 2, 0);
+	    T->nxt	= settr(8,2,7,0,0,"DO", 1, 2, 0);
+	trans[0][2]	= settr(1,4,25,22,22,"((forks[id]==0))", 1, 2, 0); /* m: 3 -> 25,0 */
+	reached0[3] = 1;
+	trans[0][3]	= settr(0,0,0,0,0,"forks[id] = id",0,0,0);
+	trans[0][4]	= settr(3,0,25,1,0,"goto thinkRight", 1, 2, 0);
+	trans[0][5]	= settr(4,4,33,23,23,"((timeToStarvation[id]<=0))", 1, 2, 0); /* m: 6 -> 33,0 */
+	reached0[6] = 1;
+	trans[0][6]	= settr(5,0,33,1,0,"goto starve", 1, 2, 0);
+	trans[0][7]	= settr(6,2,8,2,0,"else", 1, 2, 0);
+	trans[0][8]	= settr(7,2,9,24,24,"timeToStarvation[id] = (timeToStarvation[id]-1)", 1, 2, 0);
+	trans[0][11]	= settr(10,0,25,1,0,"break", 1, 2, 0);
+	T = trans[ 0][25] = settr(24,2,0,0,0,"ATOMIC", 1, 2, 0);
+	T->nxt	= settr(24,2,22,0,0,"ATOMIC", 1, 2, 0);
+	trans[0][23]	= settr(22,2,22,1,0,".(goto)", 1, 2, 0);
+	T = trans[0][22] = settr(21,2,0,0,0,"DO", 1, 2, 0);
+	T = T->nxt	= settr(21,2,13,0,0,"DO", 1, 2, 0);
+	T = T->nxt	= settr(21,2,18,0,0,"DO", 1, 2, 0);
+	    T->nxt	= settr(21,2,20,0,0,"DO", 1, 2, 0);
+	trans[0][13]	= settr(12,4,28,25,25,"((forks[((id+1)%5)]==0))", 1, 2, 0); /* m: 14 -> 28,0 */
+	reached0[14] = 1;
+	trans[0][14]	= settr(0,0,0,0,0,"forks[((id+1)%5)] = id",0,0,0);
+	trans[0][15]	= settr(0,0,0,0,0,"phils_eating = (phils_eating+1)",0,0,0);
+	trans[0][16]	= settr(0,0,0,0,0,"phils_eating_now[id] = 1",0,0,0);
+	trans[0][17]	= settr(16,0,28,1,0,"goto eat", 1, 2, 0);
+	trans[0][18]	= settr(17,4,33,26,26,"((timeToStarvation[id]<=0))", 1, 2, 0); /* m: 19 -> 33,0 */
+	reached0[19] = 1;
+	trans[0][19]	= settr(18,0,33,1,0,"goto starve", 1, 2, 0);
+	trans[0][20]	= settr(19,2,21,2,0,"else", 1, 2, 0);
+	trans[0][21]	= settr(20,2,22,27,27,"timeToStarvation[id] = (timeToStarvation[id]-1)", 1, 2, 0);
+	trans[0][24]	= settr(23,0,28,1,0,"break", 1, 2, 0);
+	T = trans[ 0][28] = settr(27,2,0,0,0,"ATOMIC", 1, 2, 0);
+	T->nxt	= settr(27,2,26,0,0,"ATOMIC", 1, 2, 0);
+	trans[0][26]	= settr(25,4,32,28,28,"phils_eating = (phils_eating-1)", 1, 2, 0); /* m: 27 -> 0,32 */
+	reached0[27] = 1;
+	trans[0][27]	= settr(0,0,0,0,0,"phils_eating_now[id] = 0",0,0,0);
+	T = trans[ 0][32] = settr(31,2,0,0,0,"ATOMIC", 1, 2, 0);
+	T->nxt	= settr(31,2,29,0,0,"ATOMIC", 1, 2, 0);
+	trans[0][29]	= settr(28,4,12,29,29,"forks[id] = 0", 1, 2, 0); /* m: 30 -> 0,12 */
+	reached0[30] = 1;
+	trans[0][30]	= settr(0,0,0,0,0,"forks[((id+1)%5)] = 0",0,0,0);
+	trans[0][31]	= settr(30,0,12,1,0,"goto thinkLeft", 1, 2, 0);
+	trans[0][33]	= settr(32,0,34,1,0,"(1)", 0, 2, 0);
+	trans[0][34]	= settr(33,0,0,30,30,"-end-", 0, 3500, 0);
 	/* np_ demon: */
 	trans[_NP_] = (Trans **) emalloc(2*sizeof(Trans *));
 	T = trans[_NP_][0] = settr(9997,0,1,_T5,0,"(np_)", 1,2,0);

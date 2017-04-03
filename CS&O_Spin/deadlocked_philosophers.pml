@@ -1,23 +1,17 @@
 #define max_philosophers 5
-#define maxTimeToStarvation 1000
 
 int forks[max_philosophers] = 0;
 int phils_eating_now[max_philosophers] = 0;
-int timeToStarvation[max_philosophers] = 0;
 int phils_eating = 0;
 
 //PHILOSOPHER---------------------------------------------------
-
 proctype philosopher(int id) {
 	thinkLeft:
 		atomic {
-			timeToStarvation[id] = maxTimeToStarvation;
 			do 
 			::(forks[id]==0) -> 
 				forks[id]=id;
 				goto thinkRight;
-			::(timeToStarvation[id] <= 0) -> goto starve;
-			::else -> timeToStarvation[id]--;
 			od;
 		};
 
@@ -29,8 +23,6 @@ proctype philosopher(int id) {
 				phils_eating++;
 				phils_eating_now[id] = 1;
 				goto eat;
-			::(timeToStarvation[id] <= 0) -> goto starve;
-			::else -> timeToStarvation[id]--;
 			od;
 			
 		};
@@ -96,7 +88,7 @@ proctype fullTable() {
 //--------------------------------------------------------------
 
 init {
-	run fourPhilosophers();
+	run fullTable();
 }
 
 

@@ -501,7 +501,7 @@ int _;	/* predefined write-only variable */
 #endif
 
 short src_ln6 [] = {
-	  0,  92,  93,   0, };
+	  0,  99, 100,   0, };
 S_F_MAP src_file6 [] = {
 	{ "-", 0, 0 },
 	{ "dining_philosophers.pml", 1, 2 },
@@ -512,8 +512,8 @@ uchar reached6 [] = {
 uchar *loopstate6;
 
 short src_ln5 [] = {
-	  0,  81,  82,  83,  84,  84,  80,  86, 
-	 80,  77,  87,   0, };
+	  0,  88,  89,  90,  91,  91,  87,  93, 
+	 87,  84,  94,   0, };
 S_F_MAP src_file5 [] = {
 	{ "-", 0, 0 },
 	{ "dining_philosophers.pml", 1, 10 },
@@ -525,8 +525,8 @@ uchar reached5 [] = {
 uchar *loopstate5;
 
 short src_ln4 [] = {
-	  0,  68,  69,  70,  71,  71,  67,  73, 
-	 67,  64,  74,   0, };
+	  0,  75,  76,  77,  78,  78,  74,  80, 
+	 74,  71,  81,   0, };
 S_F_MAP src_file4 [] = {
 	{ "-", 0, 0 },
 	{ "dining_philosophers.pml", 1, 10 },
@@ -538,7 +538,7 @@ uchar reached4 [] = {
 uchar *loopstate4;
 
 short src_ln3 [] = {
-	  0,  59,  60,  61,   0, };
+	  0,  66,  67,  68,   0, };
 S_F_MAP src_file3 [] = {
 	{ "-", 0, 0 },
 	{ "dining_philosophers.pml", 1, 3 },
@@ -549,7 +549,7 @@ uchar reached3 [] = {
 uchar *loopstate3;
 
 short src_ln2 [] = {
-	  0,  54,  55,  56,   0, };
+	  0,  61,  62,  63,   0, };
 S_F_MAP src_file2 [] = {
 	{ "-", 0, 0 },
 	{ "dining_philosophers.pml", 1, 3 },
@@ -560,7 +560,7 @@ uchar reached2 [] = {
 uchar *loopstate2;
 
 short src_ln1 [] = {
-	  0,  50,  51,   0, };
+	  0,  57,  58,   0, };
 S_F_MAP src_file1 [] = {
 	{ "-", 0, 0 },
 	{ "dining_philosophers.pml", 1, 2 },
@@ -571,20 +571,22 @@ uchar reached1 [] = {
 uchar *loopstate1;
 
 short src_ln0 [] = {
-	  0,  12,  13,  14,  15,  16,  11,  18, 
-	 11,  10,  23,  24,  25,  22,  27,  22, 
-	 21,  31,  32,  30,  37,  36,  42,  43, 
-	 41,  45,   0, };
+	  0,  14,  16,  17,  18,  19,  19,  20, 
+	 20,  15,  22,  15,  13,  27,  28,  29, 
+	 30,  31,  32,  32,  33,  33,  26,  36, 
+	 26,  25,  40,  41,  39,  46,  47,  48, 
+	 45,  51,  51,   0, };
 S_F_MAP src_file0 [] = {
 	{ "-", 0, 0 },
-	{ "dining_philosophers.pml", 1, 25 },
-	{ "-", 26, 27 }
+	{ "dining_philosophers.pml", 1, 34 },
+	{ "-", 35, 36 }
 };
 uchar reached0 [] = {
-	  0,   1,   0,   0,   0,   1,   0,   1, 
-	  1,   0,   1,   0,   1,   0,   1,   1, 
-	  0,   1,   0,   0,   1,   0,   1,   1, 
-	  0,   0,   0, };
+	  0,   1,   1,   0,   1,   1,   1,   1, 
+	  0,   0,   1,   1,   0,   1,   0,   0, 
+	  0,   1,   1,   1,   1,   0,   0,   1, 
+	  1,   0,   1,   0,   0,   1,   0,   1, 
+	  0,   1,   0,   0, };
 uchar *loopstate0;
 uchar reached7[3];  /* np_ */
 uchar *loopstate7;  /* np_ */
@@ -937,11 +939,11 @@ addproc(int calling_pid, int priority, int n, int par0)
 		reached5[9]=1;
 		/* params: */
 		/* locals: */
-		((P5 *)pptr(h))->_6_7_n_philosophers = 5;
-		((P5 *)pptr(h))->_6_7_i = 0;
+		((P5 *)pptr(h))->_6_6_n_philosophers = 5;
+		((P5 *)pptr(h))->_6_6_i = 0;
 #ifdef VAR_RANGES
-		logval("fullTable:n_philosophers", ((P5 *)pptr(h))->_6_7_n_philosophers);
-		logval("fullTable:i", ((P5 *)pptr(h))->_6_7_i);
+		logval("fullTable:n_philosophers", ((P5 *)pptr(h))->_6_6_n_philosophers);
+		logval("fullTable:i", ((P5 *)pptr(h))->_6_6_i);
 #endif
 #ifdef HAS_CODE
 		locinit5(h);
@@ -956,11 +958,11 @@ addproc(int calling_pid, int priority, int n, int par0)
 		reached4[9]=1;
 		/* params: */
 		/* locals: */
-		((P4 *)pptr(h))->_5_6_n_philosophers = 4;
-		((P4 *)pptr(h))->_5_6_i = 0;
+		((P4 *)pptr(h))->_5_5_n_philosophers = 4;
+		((P4 *)pptr(h))->_5_5_i = 0;
 #ifdef VAR_RANGES
-		logval("fourPhilosophers:n_philosophers", ((P4 *)pptr(h))->_5_6_n_philosophers);
-		logval("fourPhilosophers:i", ((P4 *)pptr(h))->_5_6_i);
+		logval("fourPhilosophers:n_philosophers", ((P4 *)pptr(h))->_5_5_n_philosophers);
+		logval("fourPhilosophers:i", ((P4 *)pptr(h))->_5_5_i);
 #endif
 #ifdef HAS_CODE
 		locinit4(h);
@@ -1007,11 +1009,11 @@ addproc(int calling_pid, int priority, int n, int par0)
 		break;
 	case 0:	/* philosopher */
 		((P0 *)pptr(h))->_t = 0;
-		((P0 *)pptr(h))->_p = 9;
+		((P0 *)pptr(h))->_p = 12;
 #ifdef HAS_PRIORITY
 		((P0 *)pptr(h))->_priority = priority; /* was: 1 */
 #endif
-		reached0[9]=1;
+		reached0[12]=1;
 		/* params: */
 		((P0 *)pptr(h))->id = par0;
 		/* locals: */
@@ -12523,12 +12525,24 @@ iniglobals(int calling_pid)
 			phils_eating_now[l_in] = 0;
 		}
 	}
+	{	int l_in;
+		for (l_in = 0; l_in < 5; l_in++)
+		{
+			now.timeToStarvation[l_in] = 0;
+		}
+	}
 		phils_eating = 0;
 #ifdef VAR_RANGES
 	{	int l_in;
 		for (l_in = 0; l_in < 5; l_in++)
 		{
 			logval("forks[l_in]", now.forks[l_in]);
+		}
+	}
+	{	int l_in;
+		for (l_in = 0; l_in < 5; l_in++)
+		{
+			logval("timeToStarvation[l_in]", now.timeToStarvation[l_in]);
 		}
 	}
 #endif
@@ -14235,7 +14249,13 @@ c_globals(void)
 	{	int l_in;
 		for (l_in = 0; l_in < 5; l_in++)
 		{
-			printf("	bit    forks[%d]:	%d\n", l_in, now.forks[l_in]);
+			printf("	int    forks[%d]:	%d\n", l_in, now.forks[l_in]);
+		}
+	}
+	{	int l_in;
+		for (l_in = 0; l_in < 5; l_in++)
+		{
+			printf("	int    timeToStarvation[%d]:	%d\n", l_in, now.timeToStarvation[l_in]);
 		}
 	}
 }
@@ -14248,13 +14268,13 @@ c_locals(int pid, int tp)
 		break;
 	case 5:
 		printf("local vars proc %d (fullTable):\n", pid);
-	printf("	int    n_philosophers:	%d\n", ((P5 *)pptr(pid))->_6_7_n_philosophers);
-	printf("	int    i:	%d\n", ((P5 *)pptr(pid))->_6_7_i);
+	printf("	int    n_philosophers:	%d\n", ((P5 *)pptr(pid))->_6_6_n_philosophers);
+	printf("	int    i:	%d\n", ((P5 *)pptr(pid))->_6_6_i);
 		break;
 	case 4:
 		printf("local vars proc %d (fourPhilosophers):\n", pid);
-	printf("	int    n_philosophers:	%d\n", ((P4 *)pptr(pid))->_5_6_n_philosophers);
-	printf("	int    i:	%d\n", ((P4 *)pptr(pid))->_5_6_i);
+	printf("	int    n_philosophers:	%d\n", ((P4 *)pptr(pid))->_5_5_n_philosophers);
+	printf("	int    i:	%d\n", ((P4 *)pptr(pid))->_5_5_i);
 		break;
 	case 3:
 		/* none */
@@ -14283,7 +14303,7 @@ c_chandump(int unused)
 {	unused++; /* avoid complaints */
 }
 
-Trans *t_id_lkup[55];
+Trans *t_id_lkup[64];
 
 
 #ifdef BFS_PAR

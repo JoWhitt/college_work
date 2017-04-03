@@ -31,7 +31,7 @@
 
 	case 7: // STATE 3
 		;
-		((P5 *)this)->_6_7_i = trpt->bup.oval;
+		((P5 *)this)->_6_6_i = trpt->bup.oval;
 		;
 		goto R999;
 
@@ -55,7 +55,7 @@
 
 	case 11: // STATE 3
 		;
-		((P4 *)this)->_5_6_i = trpt->bup.oval;
+		((P4 *)this)->_5_5_i = trpt->bup.oval;
 		;
 		goto R999;
 
@@ -130,34 +130,73 @@
 
 		 /* PROC philosopher */
 
-	case 21: // STATE 4
+	case 21: // STATE 1
+		;
+		now.timeToStarvation[ Index(((P0 *)this)->id, 5) ] = trpt->bup.oval;
+		;
+		goto R999;
+
+	case 22: // STATE 3
+		;
+		now.forks[ Index(((P0 *)this)->id, 5) ] = trpt->bup.oval;
+		;
+		goto R999;
+
+	case 23: // STATE 5
+		;
+	/* 0 */	((P0 *)this)->id = trpt->bup.oval;
+		;
+		;
+		goto R999;
+
+	case 24: // STATE 8
+		;
+		now.timeToStarvation[ Index(((P0 *)this)->id, 5) ] = trpt->bup.oval;
+		;
+		goto R999;
+
+	case 25: // STATE 16
 		;
 		phils_eating_now[ Index(((P0 *)this)->id, 5) ] = trpt->bup.ovals[2];
 		phils_eating = trpt->bup.ovals[1];
-		now.forks[ Index(((P0 *)this)->id, 5) ] = trpt->bup.ovals[0];
+		now.forks[ Index(((((P0 *)this)->id+1)%5), 5) ] = trpt->bup.ovals[0];
 		;
 		ungrab_ints(trpt->bup.ovals, 3);
 		goto R999;
 
-	case 22: // STATE 11
+	case 26: // STATE 18
 		;
-		now.forks[ Index(((((P0 *)this)->id+1)%5), 5) ] = trpt->bup.oval;
+	/* 0 */	((P0 *)this)->id = trpt->bup.oval;
+		;
 		;
 		goto R999;
 
-	case 23: // STATE 18
+	case 27: // STATE 21
+		;
+		now.timeToStarvation[ Index(((P0 *)this)->id, 5) ] = trpt->bup.oval;
+		;
+		goto R999;
+
+	case 28: // STATE 27
 		;
 		phils_eating_now[ Index(((P0 *)this)->id, 5) ] = trpt->bup.ovals[1];
 		phils_eating = trpt->bup.ovals[0];
 		;
 		ungrab_ints(trpt->bup.ovals, 2);
 		goto R999;
-;
+
+	case 29: // STATE 30
 		;
-		
-	case 25: // STATE 22
+		now.forks[ Index(((((P0 *)this)->id+1)%5), 5) ] = trpt->bup.ovals[1];
+		now.forks[ Index(((P0 *)this)->id, 5) ] = trpt->bup.ovals[0];
 		;
-		now.forks[ Index(((((P0 *)this)->id+1)%5), 5) ] = trpt->bup.oval;
+		ungrab_ints(trpt->bup.ovals, 2);
+		goto R999;
+
+	case 30: // STATE 34
+		;
+		p_restor(II);
+		;
 		;
 		goto R999;
 	}
