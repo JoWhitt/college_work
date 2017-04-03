@@ -1,0 +1,126 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
+/**
+ * CS2010 (Hilary Term) - Assignment 3
+ * Self Divisible Numbers
+ * 
+ * Self divisible numbers are those, that satisfy the following property:
+ * 		a) All the 9 digits in the number are different, i.e. each of the 9 digits 1..9 is used once.
+ * 		b) The number denoted by the first k-digits is divisible by k (i.e. the first k-digits are a multiple of k)
+ *  
+ *  	Consider the number 723654981; 
+ *  	We have:   1|7,  2|72, 3|723, 4|7236, 5|72365, 6|723654  [read  a|b  as “a divides b” or “b is a multiple of a” ] 
+ *  	but 7 does not divide  7236549. So this number does not satisfy property b).
+ *  
+ * Create a Java program that generates all 9-digit numbers.
+ * 
+ * 1) Implement all methods described bellow - like in HT assignment 1, calculate the values in the constructor
+ * 2) Implement tests, which sufficiently cover your code
+ *  
+ * @author: Joanna Whittam (15319524)
+ * 
+ */
+
+public class SelfDivisibleNumbers {
+
+	private static final int ERROR = -1;
+	private static final int N_DIGITS = 9;
+	private static int LOWEST_K_DIGIT;
+	private static int HIGHEST_K_DIGIT;
+	
+	ArrayList<Integer> SelfDivisibleNumbers;
+	
+	public SelfDivisibleNumbers() {
+		getSelfDivisibleNumbers();
+		System.out.println(SelfDivisibleNumbers.toString());
+	}
+	
+	/**
+	 * Method to produce the digits to be used
+	 * @param k number of digits to construct return
+	 * @return digits
+	 */
+	private int[] getDigits(int k) {		
+		int digits[] = new int [N_DIGITS];
+		
+		// get digits being used
+		for (int i=0; i<k; i++) {
+			digits[i] = i+1;
+		}
+		return digits;
+	}
+	
+	/**
+	 * Method to produce a number corresponding to first k digits of the digits array
+	 * @param digits
+	 * @param k number of digits to construct the result from
+	 * @return number
+	 */
+	public int getFirstKDigitNumber(int[] digits, int k) {
+		int number = 0;
+		for (int i=0; i<k; i++) {
+			number = (number*10) + digits[i];
+		}
+		return number;
+	}
+	
+	/**
+	 * Method to check if the specified number is divisible by the divisor
+	 * @param number
+	 * @param divisor
+	 * @return true if number is divisible by the divisor
+	 */
+	public boolean isDivisible(int number, int divisor) {
+		return (number%divisor)==0;
+	}
+	
+	public void recurseFindSelfDivisibleNumbers(int numberBase, int length, boolean digitUsed[]) {
+		
+		if (length == 9 && isDivisible(numberBase, length)) {
+			SelfDivisibleNumbers.add(numberBase);
+		}
+		else if (length < 9 && isDivisible(numberBase, length)) {
+			int newNumber;
+			for (int i=0; i<digitUsed.length; i++) {
+				if (digitUsed[i]==false) {
+					newNumber = (numberBase*10) + (i+1);
+					digitUsed[i] = true;
+					recurseFindSelfDivisibleNumbers(newNumber, length+1, digitUsed);
+					digitUsed[i] = false;
+				}
+			}
+		}
+		
+	}
+	
+	/**
+	 * Method to return a list containing all self divisible numbers found
+	 * @return 9-digit self divisible numbers
+	 */
+	public ArrayList<Integer> getSelfDivisibleNumbers() {
+		int digits[] = getDigits(N_DIGITS);
+		boolean digitUsed[] = new boolean[N_DIGITS];
+		
+		SelfDivisibleNumbers = new ArrayList<Integer>();
+		for (int i=0; i<digits.length; i++) {
+			recurseFindSelfDivisibleNumbers(i+1, 1, digitUsed);
+		}
+		return SelfDivisibleNumbers;
+	}
+	
+	/**
+	 * Method to return the number of self divisible numbers found
+	 * @return number of 9-digit self divisible numbers
+	 */
+	public int getNumberOfSelfDivisibleNumbers() {
+		// TODO: Implement
+		return -1;
+	}
+	
+	public static void main(String arg0[]) {
+		SelfDivisibleNumbers SDN = new SelfDivisibleNumbers();
+	}
+}
+
+

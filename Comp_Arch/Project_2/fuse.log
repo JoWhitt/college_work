@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 Running: C:\Xilinx\13.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit_tb_isim_beh.exe -prj U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit_tb_beh.prj work.shifter_16bit_tb 
+=======
+Running: C:\Xilinx\13.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o U:/GitHub/college_work/Comp_Arch/Project_2/mux2_16bit_tb_isim_beh.exe -prj U:/GitHub/college_work/Comp_Arch/Project_2/mux2_16bit_tb_beh.prj work.mux2_16bit_tb 
+>>>>>>> 57165bdcb5c401cdb3cb1fed7d59da44fc61a888
 ISim O.61xd (signature 0x1cce1bb2)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
+<<<<<<< HEAD
 Parsing VHDL file "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" into library work
 Parsing VHDL file "U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit_tb.vhd" into library work
 Starting static elaboration
@@ -50,3 +55,19 @@ Compiled 6 VHDL Units
 Built simulation executable U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit_tb_isim_beh.exe
 Fuse Memory Usage: 26228 KB
 Fuse CPU Usage: 218 ms
+=======
+Parsing VHDL file "U:/GitHub/college_work/Comp_Arch/Project_2/P2_Multicoded_instruction_set_processor/mux2_16bit.vhd" into library work
+Parsing VHDL file "U:/GitHub/college_work/Comp_Arch/Project_2/P2_Multicoded_instruction_set_processor/mux2_16bit_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity mux2_16bit [mux2_16bit_default]
+Compiling architecture behavior of entity mux2_16bit_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 5 VHDL Units
+Built simulation executable U:/GitHub/college_work/Comp_Arch/Project_2/mux2_16bit_tb_isim_beh.exe
+Fuse Memory Usage: 20424 KB
+Fuse CPU Usage: 108 ms
+>>>>>>> 57165bdcb5c401cdb3cb1fed7d59da44fc61a888

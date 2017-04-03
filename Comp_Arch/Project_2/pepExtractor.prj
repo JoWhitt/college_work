@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 work	"ripple_adder_16bit.vhd"
+=======
+work	"P2_Multicoded_instruction_set_processor/register_file_9.vhd"
+>>>>>>> 57165bdcb5c401cdb3cb1fed7d59da44fc61a888

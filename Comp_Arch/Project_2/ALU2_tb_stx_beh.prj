@@ -1,0 +1,4 @@
+vhdl isim_temp "P2_Multicoded_instruction_set_processor/full_adder.vhd"
+vhdl isim_temp "P2_Multicoded_instruction_set_processor/ripple_adder_16bit.vhd"
+vhdl isim_temp "P2_Multicoded_instruction_set_processor/arithmetic_logic_unit_2.vhd"
+vhdl isim_temp "P2_Multicoded_instruction_set_processor/ALU2_tb.vhd"

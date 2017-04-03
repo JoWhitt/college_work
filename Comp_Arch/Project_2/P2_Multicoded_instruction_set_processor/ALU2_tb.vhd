@@ -34,6 +34,7 @@ ARCHITECTURE behavior OF ALU2_tb IS
  
     COMPONENT arithmetic_logic_unit_2
     PORT(	dataA, dataB : in  STD_LOGIC_VECTOR (15 downto 0);
+<<<<<<< HEAD
 				FS_code : in  STD_LOGIC_VECTOR (4 downto 0);
 				V, C_out : out  STD_LOGIC;
 				dataG : out  STD_LOGIC_VECTOR (15 downto 0));
@@ -44,16 +45,37 @@ ARCHITECTURE behavior OF ALU2_tb IS
    signal FS_code : std_logic_vector(4 downto 0) := (others => '0');
  	--Outputs
    signal V, C_out : std_logic;
+=======
+			FS_code : in  STD_LOGIC_VECTOR (4 downto 0);
+			V, C_out : out  STD_LOGIC;
+			dataG : out  STD_LOGIC_VECTOR (15 downto 0));
+    END COMPONENT;
+    
+   --Inputs
+   signal dataA,dataB : std_logic_vector(15 downto 0) := (others => '0');
+   signal FS_code : std_logic_vector(4 downto 0) := (others => '0');
+ 	--Outputs
+   signal V,C_out : std_logic;
+>>>>>>> 57165bdcb5c401cdb3cb1fed7d59da44fc61a888
    signal dataG : std_logic_vector(15 downto 0);
 
 BEGIN
    uut: arithmetic_logic_unit_2 PORT MAP (
+<<<<<<< HEAD
           dataA => dataA,
           dataB => dataB,
           FS_code => FS_code,
           V => V,
           C_out => C_out,
           dataG => dataG
+=======
+	  dataA => dataA,
+	  dataB => dataB,
+	  FS_code => FS_code,
+	  V => V,
+	  C_out => C_out,
+	  dataG => dataG
+>>>>>>> 57165bdcb5c401cdb3cb1fed7d59da44fc61a888
    );
  
    stim_proc: process
@@ -63,14 +85,20 @@ BEGIN
 		dataB <= "0011000011110000";
 		
 		wait for 10 ns;	FS_code <= "00000";
+<<<<<<< HEAD
 		wait for 10 ns; 	FS_code <= "00001";
 		wait for 10 ns; 	FS_code <= "00010";
+=======
+		wait for 10 ns; FS_code <= "00001";
+		wait for 10 ns; FS_code <= "00010";
+>>>>>>> 57165bdcb5c401cdb3cb1fed7d59da44fc61a888
 		wait for 10 ns;	FS_code <= "00011";
 		wait for 10 ns;	FS_code <= "00100";
 		wait for 10 ns;	FS_code <= "00101";
 		wait for 10 ns;	FS_code <= "00110";
 		wait for 10 ns;	FS_code <= "00111";
 		
+<<<<<<< HEAD
 		wait for 10 ns; 	FS_code <= "01000";
 		wait for 10 ns; 	FS_code <= "01010";
 		wait for 10 ns; 	FS_code <= "01100";
@@ -79,4 +107,12 @@ BEGIN
 
    end process;
 
+=======
+		wait for 10 ns; FS_code <= "01000";
+		wait for 10 ns; FS_code <= "01010";
+		wait for 10 ns; FS_code <= "01100";
+		wait for 10 ns; FS_code <= "01110";	
+		wait;
+   end process;
+>>>>>>> 57165bdcb5c401cdb3cb1fed7d59da44fc61a888
 END;

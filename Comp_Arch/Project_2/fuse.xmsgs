@@ -5,6 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<<<<<<< HEAD
 <msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd" Line 39: &lt;<arg fmt="%s" index="1">mux16_1bit</arg>&gt; remains a black-box since it has no binding entity.
 </msg>
 
@@ -101,5 +102,7 @@
 <msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">U:/GitHub/college_work/Comp_Arch/Project_2/shifter_16bit.vhd</arg>&quot; Line <arg fmt="%d" index="2">398</arg>. Instance <arg fmt="%s" index="3">mux16_1bit</arg> is unbound
 </msg>
 
+=======
+>>>>>>> 57165bdcb5c401cdb3cb1fed7d59da44fc61a888
 </messages>
 

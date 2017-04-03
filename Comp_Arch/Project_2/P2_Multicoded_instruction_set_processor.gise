@@ -23,21 +23,43 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ALU2_tb_isim_beh.exe"/>
+<<<<<<< HEAD
+=======
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALU2_tb_stx_beh.prj"/>
+>>>>>>> 57165bdcb5c401cdb3cb1fed7d59da44fc61a888
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="full_adder_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+<<<<<<< HEAD
+=======
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="mux16_1bit_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mux2_16bit_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="mux2_16bit_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="mux2_16bit_tb_isim_beh.wdb"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="mux9_16bit_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="reg_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="reg_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="reg_tb_isim_beh.wdb"/>
+>>>>>>> 57165bdcb5c401cdb3cb1fed7d59da44fc61a888
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ripple_adder_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="shifter_16bit_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="shifter_16bit_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="shifter_16bit_tb_isim_beh.wdb"/>
+<<<<<<< HEAD
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+=======
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testbench_isim_beh.exe"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="zero_detect_tb_isim_beh.exe"/>
+>>>>>>> 57165bdcb5c401cdb3cb1fed7d59da44fc61a888
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1490453877" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1490453877">
       <status xil_pn:value="SuccessfullyRun"/>
+<<<<<<< HEAD
     </transform>
     <transform xil_pn:end_ts="1490458672" xil_pn:in_ck="5050356814120948388" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1490458672">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -54,6 +76,44 @@
       <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1490458672" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="4194015463353250701" xil_pn:start_ts="1490458672">
+=======
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1491064617" xil_pn:in_ck="5745191381211110102" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1491064617">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/ALU2_tb.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/Register.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/arithmetic_logic_unit_2.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/decoder_4to9.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/full_adder.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/full_adder_tb.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/function_unit.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/function_unit_tb.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/mux16_1bit.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/mux16_1bit_tb.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/mux2_16bit.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/mux2_16bit_tb.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/mux9_16bit.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/mux9_16bit_tb.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/reg_tb.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/register_file_9.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/ripple_adder_16bit.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/ripple_adder_tb.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/shifter_16bit.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/shifter_16bit_tb.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/zero_detect_16.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/zero_detect_tb.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1491064237" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="271342814073301820" xil_pn:start_ts="1491064237">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1491064237" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="516118177880999556" xil_pn:start_ts="1491064237">
+>>>>>>> 57165bdcb5c401cdb3cb1fed7d59da44fc61a888
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -61,22 +121,58 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
+<<<<<<< HEAD
     <transform xil_pn:end_ts="1490458672" xil_pn:in_ck="5050356814120948388" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1490458672">
+=======
+    <transform xil_pn:end_ts="1491064237" xil_pn:in_ck="5745191381211110102" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1491064237">
+>>>>>>> 57165bdcb5c401cdb3cb1fed7d59da44fc61a888
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+<<<<<<< HEAD
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1490458676" xil_pn:in_ck="5050356814120948388" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5197672513470523448" xil_pn:start_ts="1490458672">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="NotReadyToRun"/>
+=======
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/ALU2_tb.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/Register.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/arithmetic_logic_unit_2.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/decoder_4to9.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/full_adder.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/full_adder_tb.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/function_unit.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/function_unit_tb.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/mux16_1bit.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/mux16_1bit_tb.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/mux2_16bit.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/mux2_16bit_tb.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/mux9_16bit.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/mux9_16bit_tb.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/reg_tb.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/register_file_9.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/ripple_adder_16bit.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/ripple_adder_tb.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/shifter_16bit.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/shifter_16bit_tb.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/zero_detect_16.vhd"/>
+      <outfile xil_pn:name="P2_Multicoded_instruction_set_processor/zero_detect_tb.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1491064239" xil_pn:in_ck="5745191381211110102" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4244866547068896470" xil_pn:start_ts="1491064237">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+>>>>>>> 57165bdcb5c401cdb3cb1fed7d59da44fc61a888
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+<<<<<<< HEAD
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputRemoved"/>
     </transform>
@@ -90,6 +186,27 @@
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
       <status xil_pn:value="OutputRemoved"/>
+=======
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="mux2_16bit_tb_beh.prj"/>
+      <outfile xil_pn:name="mux2_16bit_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1491064239" xil_pn:in_ck="-4573290394185533979" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3942503916271645596" xil_pn:start_ts="1491064239">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="mux2_16bit_tb_isim_beh.wdb"/>
+>>>>>>> 57165bdcb5c401cdb3cb1fed7d59da44fc61a888
     </transform>
   </transforms>
 
