@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "U:/GitHub/college_work/Comp_Arch/Project_2/Project_2/register_file_64_tb_isim_beh.exe" -prj "U:/GitHub/college_work/Comp_Arch/Project_2/Project_2/register_file_64_tb_beh.prj" "register_file_64_tb" 

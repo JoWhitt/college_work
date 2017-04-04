@@ -14,9 +14,6 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;U:/GitHub/college_work/Comp_Arch/arithmetic_logic_unit.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;U:/GitHub/college_work/Comp_Arch/arithmetic_logic_unit_2.vhd&quot; into library work</arg>
-</msg>
-
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;U:/GitHub/college_work/Comp_Arch/datapath.vhd&quot; into library work</arg>
 </msg>
 
@@ -30,9 +27,6 @@
 </msg>
 
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;U:/GitHub/college_work/Comp_Arch/mux16_1bit.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;U:/GitHub/college_work/Comp_Arch/mux2_16bit.vhd&quot; into library work</arg>
 </msg>
 
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;U:/GitHub/college_work/Comp_Arch/mux8_16bit.vhd&quot; into library work</arg>
