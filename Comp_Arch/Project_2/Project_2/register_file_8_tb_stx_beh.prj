@@ -1,5 +1,0 @@
-vhdl isim_temp "Register.vhd"
-vhdl isim_temp "mux8_16bit.vhd"
-vhdl isim_temp "decoder_3to8.vhd"
-vhdl isim_temp "register_file_8.vhd"
-vhdl isim_temp "register_file_8_tb.vhd"
