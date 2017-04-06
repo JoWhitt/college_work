@@ -1,0 +1,29 @@
+Command line:
+   decoder_4to9_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  5373
+
+Thu Apr 06 14:46:59 2017
+
+
+ Elaboration Time: 0.0156 sec
+
+ Current Memory Usage: 495.055 Meg
+
+ Total Signals          : 26
+ Total Nets             : 13
+ Total Signal Drivers   : 12
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 10
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 373
+Total Line Count : 18
+
+ Total Simulation Time: 0.0156 sec
+
+ Current Memory Usage: 495.055 Meg
+
+Thu Apr 06 14:49:48 2017
+

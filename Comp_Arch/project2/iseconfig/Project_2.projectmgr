@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="Project_2" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/arithmetic_logic_unit_2 - Behavioral U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|arithmetic_logic_unit_2.vhd</ClosedNode>
+         <ClosedNode>/function_unit - Behavioral U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|function_unit.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Unassigned User Library Modules</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000000e7000000020000000100000000000000000200000064ffffffff000000810000000300000002000000e70000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>Unassigned User Library Modules</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000392000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000002c60000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>ALU2_tb.vhd</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000392000000010001000100000000000000000000000064ffffffff000000810000000000000001000003920000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000001ec000000bb01000000050100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/ALU2_tb - behavior U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|ALU2_tb.vhd</ClosedNode>
+         <ClosedNode>/ALU2_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|ALU2_tb.vhd/uut - arithmetic_logic_unit_2 - Behavioral/ripple_adder - ripple_adder_16bit - Behavioral</ClosedNode>
+         <ClosedNode>/decoder_3to8_tb - behavior U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|decoder_3to8_tb.vhd</ClosedNode>
+         <ClosedNode>/decoder_3to8_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|decoder_3to8_tb.vhd</ClosedNode>
+         <ClosedNode>/full_adder_tb - behavior U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|full_adder_tb.vhd</ClosedNode>
+         <ClosedNode>/full_adder_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|full_adder_tb.vhd</ClosedNode>
+         <ClosedNode>/function_unit_tb - behavior U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|function_unit_tb.vhd</ClosedNode>
+         <ClosedNode>/function_unit_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|function_unit_tb.vhd/uut - function_unit - Behavioral</ClosedNode>
+         <ClosedNode>/mux16_1bit_tb - behavior U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|mux16_1bit_tb.vhd</ClosedNode>
+         <ClosedNode>/mux16_1bit_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|mux16_1bit_tb.vhd</ClosedNode>
+         <ClosedNode>/mux2_16bit_tb - behavior U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|mux2_16bit_tb.vhd</ClosedNode>
+         <ClosedNode>/mux2_16bit_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|mux2_16bit_tb.vhd</ClosedNode>
+         <ClosedNode>/mux7_16bit_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|mux7_16bit_tb.vhd</ClosedNode>
+         <ClosedNode>/mux8_16bit_tb - behavior U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|mux8_16bit_tb.vhd</ClosedNode>
+         <ClosedNode>/mux9_16bit_tb - behavior U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|mux9_16bit_tb.vhd</ClosedNode>
+         <ClosedNode>/reg_tb - behavior U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|reg_tb.vhd</ClosedNode>
+         <ClosedNode>/reg_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|reg_tb.vhd</ClosedNode>
+         <ClosedNode>/register_file_64 - Behavioral U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|register_file_64.vhd</ClosedNode>
+         <ClosedNode>/register_file_64_tb - behavior U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|register_file_64_tb.vhd/uut - register_file_64 - Behavioral</ClosedNode>
+         <ClosedNode>/register_file_64_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|register_file_64_tb.vhd</ClosedNode>
+         <ClosedNode>/register_file_64_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|register_file_64_tb.vhd/uut - register_file_64 - Behavioral</ClosedNode>
+         <ClosedNode>/register_file_8_tb - behavior U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|register_file_8_tb.vhd/uut - register_file_8 - Behavioral</ClosedNode>
+         <ClosedNode>/register_file_8_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|register_file_8_tb.vhd/uut - register_file_8 - Behavioral</ClosedNode>
+         <ClosedNode>/register_file_9_tb - behavior U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|register_file_9_tb.vhd</ClosedNode>
+         <ClosedNode>/ripple_adder_tb - behavior U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|ripple_adder_tb.vhd</ClosedNode>
+         <ClosedNode>/ripple_adder_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|ripple_adder_tb.vhd</ClosedNode>
+         <ClosedNode>/shifter_16bit_tb - behavior U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|shifter_16bit_tb.vhd</ClosedNode>
+         <ClosedNode>/shifter_16bit_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|shifter_16bit_tb.vhd/uut - shifter_16bit - Behavioral</ClosedNode>
+         <ClosedNode>/zero_detect_tb - behavior U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|zero_detect_tb.vhd</ClosedNode>
+         <ClosedNode>/zero_detect_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|zero_detect_tb.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>uut - register_file_9 - Behavioral (U:/GitHub/college_work/Comp_Arch/project2/register_file_9.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001dc000000020000000000000000000000000200000064ffffffff000000810000000300000002000001dc0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>uut - register_file_9 - Behavioral (U:/GitHub/college_work/Comp_Arch/project2/register_file_9.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000fe000000010000000100000000000000000000000064ffffffff000000810000000000000001000000fe0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000fe000000010000000100000000000000000000000064ffffffff000000810000000000000001000000fe0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+</Project>
