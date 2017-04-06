@@ -46,7 +46,7 @@ architecture Behavioral of function_unit is
 			Z: out  STD_LOGIC_VECTOR (15 downto 0));
 	end component;
 	
-	component arithmetic_logic_unit is
+	component arithmetic_logic_unit_2 is
 	Port( dataA, dataB : in  STD_LOGIC_VECTOR (15 downto 0);
 			FS_code : in  STD_LOGIC_VECTOR (4 downto 0);
 			V, C_out : out  STD_LOGIC;
@@ -58,7 +58,7 @@ architecture Behavioral of function_unit is
 	signal shifter_sel: STD_LOGIC_VECTOR (3 downto 0);
 begin
 
-	ALU: arithmetic_logic_unit port map (
+	ALU: arithmetic_logic_unit_2	port map (
 		dataA => busA, 
 		dataB => busB,
 		FS_code => FSel,

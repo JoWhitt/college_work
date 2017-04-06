@@ -61,20 +61,40 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/ALU2_tb - behavior U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|ALU2_tb.vhd</ClosedNode>
+         <ClosedNode>/ALU2_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|ALU2_tb.vhd</ClosedNode>
+         <ClosedNode>/ALU2_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|ALU2_tb.vhd/uut - arithmetic_logic_unit_2 - Behavioral</ClosedNode>
          <ClosedNode>/ALU2_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|ALU2_tb.vhd/uut - arithmetic_logic_unit_2 - Behavioral/ripple_adder - ripple_adder_16bit - Behavioral</ClosedNode>
+         <ClosedNode>/datapath - Behavioral U:|GitHub|college_work|Comp_Arch|project2|datapath.vhd</ClosedNode>
+         <ClosedNode>/datapath - Behavioral U:|GitHub|college_work|Comp_Arch|project2|datapath.vhd/reg_file - register_file_9 - Behavioral</ClosedNode>
+         <ClosedNode>/datapath - Behavioral U:|GitHub|college_work|Comp_Arch|project2|datapath.vhd/uut - function_unit - Behavioral</ClosedNode>
          <ClosedNode>/decoder_3to8_tb - behavior U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|decoder_3to8_tb.vhd</ClosedNode>
          <ClosedNode>/decoder_3to8_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|decoder_3to8_tb.vhd</ClosedNode>
+         <ClosedNode>/decoder_4to9_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|decoder_4to9_tb.vhd</ClosedNode>
          <ClosedNode>/full_adder_tb - behavior U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|full_adder_tb.vhd</ClosedNode>
          <ClosedNode>/full_adder_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|full_adder_tb.vhd</ClosedNode>
          <ClosedNode>/function_unit_tb - behavior U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|function_unit_tb.vhd</ClosedNode>
+         <ClosedNode>/function_unit_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|function_unit_tb.vhd</ClosedNode>
          <ClosedNode>/function_unit_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|function_unit_tb.vhd/uut - function_unit - Behavioral</ClosedNode>
+         <ClosedNode>/memory512_16bit - Behavioral U:|GitHub|college_work|Comp_Arch|project2|memory512_16bit.vhd</ClosedNode>
+         <ClosedNode>/memory512_16bit_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|memory512_16bit_tb.vhd</ClosedNode>
+         <ClosedNode>/memory512_16bit_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|memory512_16bit_tb.vhd/uut - memory512_16bit - Behavioral</ClosedNode>
+         <ClosedNode>/memory512_16bit_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|memory512_16bit_tb.vhd/uut - memory512_16bit - Behavioral/reg_file0 - register_file_64 - Behavioral</ClosedNode>
+         <ClosedNode>/memory512_16bit_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|memory512_16bit_tb.vhd/uut - memory512_16bit - Behavioral/reg_file1 - register_file_64 - Behavioral</ClosedNode>
+         <ClosedNode>/memory512_16bit_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|memory512_16bit_tb.vhd/uut - memory512_16bit - Behavioral/reg_file2 - register_file_64 - Behavioral</ClosedNode>
+         <ClosedNode>/memory512_16bit_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|memory512_16bit_tb.vhd/uut - memory512_16bit - Behavioral/reg_file3 - register_file_64 - Behavioral</ClosedNode>
+         <ClosedNode>/memory512_16bit_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|memory512_16bit_tb.vhd/uut - memory512_16bit - Behavioral/reg_file4 - register_file_64 - Behavioral</ClosedNode>
+         <ClosedNode>/memory512_16bit_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|memory512_16bit_tb.vhd/uut - memory512_16bit - Behavioral/reg_file5 - register_file_64 - Behavioral</ClosedNode>
+         <ClosedNode>/memory512_16bit_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|memory512_16bit_tb.vhd/uut - memory512_16bit - Behavioral/reg_file6 - register_file_64 - Behavioral</ClosedNode>
+         <ClosedNode>/memory512_16bit_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|memory512_16bit_tb.vhd/uut - memory512_16bit - Behavioral/reg_file7 - register_file_64 - Behavioral</ClosedNode>
          <ClosedNode>/mux16_1bit_tb - behavior U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|mux16_1bit_tb.vhd</ClosedNode>
          <ClosedNode>/mux16_1bit_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|mux16_1bit_tb.vhd</ClosedNode>
          <ClosedNode>/mux2_16bit_tb - behavior U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|mux2_16bit_tb.vhd</ClosedNode>
          <ClosedNode>/mux2_16bit_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|mux2_16bit_tb.vhd</ClosedNode>
          <ClosedNode>/mux7_16bit_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|mux7_16bit_tb.vhd</ClosedNode>
          <ClosedNode>/mux8_16bit_tb - behavior U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|mux8_16bit_tb.vhd</ClosedNode>
+         <ClosedNode>/mux8_16bit_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|mux8_16bit_tb.vhd</ClosedNode>
          <ClosedNode>/mux9_16bit_tb - behavior U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|mux9_16bit_tb.vhd</ClosedNode>
+         <ClosedNode>/mux9_16bit_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|mux9_16bit_tb.vhd</ClosedNode>
          <ClosedNode>/reg_tb - behavior U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|reg_tb.vhd</ClosedNode>
          <ClosedNode>/reg_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|reg_tb.vhd</ClosedNode>
          <ClosedNode>/register_file_64 - Behavioral U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|register_file_64.vhd</ClosedNode>
@@ -82,23 +102,28 @@
          <ClosedNode>/register_file_64_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|register_file_64_tb.vhd</ClosedNode>
          <ClosedNode>/register_file_64_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|register_file_64_tb.vhd/uut - register_file_64 - Behavioral</ClosedNode>
          <ClosedNode>/register_file_8_tb - behavior U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|register_file_8_tb.vhd/uut - register_file_8 - Behavioral</ClosedNode>
+         <ClosedNode>/register_file_8_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|register_file_8_tb.vhd</ClosedNode>
          <ClosedNode>/register_file_8_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|register_file_8_tb.vhd/uut - register_file_8 - Behavioral</ClosedNode>
          <ClosedNode>/register_file_9_tb - behavior U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|register_file_9_tb.vhd</ClosedNode>
+         <ClosedNode>/register_file_9_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|register_file_9_tb.vhd</ClosedNode>
+         <ClosedNode>/register_file_9_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|register_file_9_tb.vhd/uut - register_file_9 - Behavioral</ClosedNode>
          <ClosedNode>/ripple_adder_tb - behavior U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|ripple_adder_tb.vhd</ClosedNode>
          <ClosedNode>/ripple_adder_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|ripple_adder_tb.vhd</ClosedNode>
          <ClosedNode>/shifter_16bit_tb - behavior U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|shifter_16bit_tb.vhd</ClosedNode>
+         <ClosedNode>/shifter_16bit_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|shifter_16bit_tb.vhd</ClosedNode>
          <ClosedNode>/shifter_16bit_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|shifter_16bit_tb.vhd/uut - shifter_16bit - Behavioral</ClosedNode>
          <ClosedNode>/zero_detect_tb - behavior U:|GitHub|college_work|Comp_Arch|Project_2|Project_2|zero_detect_tb.vhd</ClosedNode>
          <ClosedNode>/zero_detect_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|zero_detect_tb.vhd</ClosedNode>
+         <ClosedNode>/zero_fill_tb - behavior U:|GitHub|college_work|Comp_Arch|project2|zero_fill_tb.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>uut - register_file_9 - Behavioral (U:/GitHub/college_work/Comp_Arch/project2/register_file_9.vhd)</SelectedItem>
+         <SelectedItem>Unassigned User Library Modules</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001dc000000020000000000000000000000000200000064ffffffff000000810000000300000002000001dc0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000017d000000020000000000000000000000000200000064ffffffff0000008100000003000000020000017d0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>uut - register_file_9 - Behavioral (U:/GitHub/college_work/Comp_Arch/project2/register_file_9.vhd)</CurrentItem>
+      <CurrentItem>Unassigned User Library Modules</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -110,7 +135,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000fe000000010000000100000000000000000000000064ffffffff000000810000000000000001000000fe0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f7000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f70000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -123,7 +148,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000fe000000010000000100000000000000000000000064ffffffff000000810000000000000001000000fe0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f7000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f70000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>

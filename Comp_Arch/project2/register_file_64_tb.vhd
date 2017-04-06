@@ -97,7 +97,6 @@ BEGIN
 			wait for CLK_period*4;
 			srcAddress <= std_logic_vector (unsigned(srcAddress) +1);
 		end loop;
-		
       wait;
    end process;
 END;

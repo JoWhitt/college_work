@@ -8,7 +8,7 @@
 <!-- Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;U:/GitHub/college_work/Comp_Arch/project2/decoder_4to9_tb.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;U:/GitHub/college_work/Comp_Arch/project2/mux2_16bit_tb.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

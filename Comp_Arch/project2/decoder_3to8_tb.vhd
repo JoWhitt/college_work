@@ -61,8 +61,7 @@ BEGIN
 		  
  stim_proc: process
  begin		
-      wait for 100 ns;	
-		
+      wait for 100 ns;
 		A0<='0'; A1<='0'; A2<='0';		wait for 10 ns;
 		A0<='1'; A1<='0'; A2<='0';		wait for 10 ns;
 		A0<='0'; A1<='1'; A2<='0';		wait for 10 ns;

@@ -50,7 +50,7 @@ BEGIN
           In0 => In0,
           In1 => In1,
           Z => Z
-        );
+   );
 
    stim_proc: process
    begin		
