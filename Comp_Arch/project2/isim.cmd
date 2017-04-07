@@ -1,3 +1,3 @@
 onerror {resume}
 wave add /
-run 12000 ns;
+run 4000 ns;

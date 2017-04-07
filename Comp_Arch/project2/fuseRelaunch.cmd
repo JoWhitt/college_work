@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "U:/GitHub/college_work/Comp_Arch/project2/zero_fill_tb_isim_beh.exe" -prj "U:/GitHub/college_work/Comp_Arch/project2/zero_fill_tb_beh.prj" "work.zero_fill_tb" 
+-intstyle "ise" -incremental -o "U:/GitHub/college_work/Comp_Arch/project2/control_memory_tb_isim_beh.exe" -prj "U:/GitHub/college_work/Comp_Arch/project2/control_memory_tb_beh.prj" "control_memory_tb" 

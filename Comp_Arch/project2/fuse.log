@@ -1,18 +1,21 @@
-Running: C:\Xilinx\13.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o U:/GitHub/college_work/Comp_Arch/project2/zero_fill_tb_isim_beh.exe -prj U:/GitHub/college_work/Comp_Arch/project2/zero_fill_tb_beh.prj work.zero_fill_tb 
+Running: C:\Xilinx\13.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o U:/GitHub/college_work/Comp_Arch/project2/control_memory_tb_isim_beh.exe -prj U:/GitHub/college_work/Comp_Arch/project2/control_memory_tb_beh.prj control_memory_tb 
 ISim O.61xd (signature 0x1cce1bb2)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Parsing VHDL file "U:/GitHub/college_work/Comp_Arch/project2/zero_fill.vhd" into library work
-Parsing VHDL file "U:/GitHub/college_work/Comp_Arch/project2/zero_fill_tb.vhd" into library work
+Parsing VHDL file "U:/GitHub/college_work/Comp_Arch/project2/control_memory_256by28.vhd" into library work
+Parsing VHDL file "U:/GitHub/college_work/Comp_Arch/project2/control_memory_tb.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
-Compiling architecture behavioral of entity zero_fill [zero_fill_default]
-Compiling architecture behavior of entity zero_fill_tb
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity control_memory_256by28 [control_memory_256by28_default]
+Compiling architecture behavior of entity control_memory_tb
 Time Resolution for simulation is 1ps.
-Compiled 5 VHDL Units
-Built simulation executable U:/GitHub/college_work/Comp_Arch/project2/zero_fill_tb_isim_beh.exe
-Fuse Memory Usage: 20496 KB
-Fuse CPU Usage: 108 ms
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 7 VHDL Units
+Built simulation executable U:/GitHub/college_work/Comp_Arch/project2/control_memory_tb_isim_beh.exe
+Fuse Memory Usage: 24824 KB
+Fuse CPU Usage: 264 ms
